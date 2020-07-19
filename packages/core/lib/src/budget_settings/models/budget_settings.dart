@@ -1,7 +1,26 @@
 import 'package:freezed_annotation/freezed_annotation.dart';
 import 'package:dartz/dartz.dart';
 
-part 'currency_format.freezed.dart';
+part 'budget_settings.freezed.dart';
+
+/// The customizable options for the budget.
+@freezed
+abstract class BudgetSettings with _$BudgetSettings {
+  factory BudgetSettings({
+    @required DateFormat dateFormat,
+    @required CurrencyFormat currencyFormat,
+  }) = _BudgetSettings;
+}
+
+/// The date format setting for the budget.
+@freezed
+abstract class DateFormat with _$DateFormat {
+  factory DateFormat(DateOrder order, DateSeparator separator) = _DateFormat;
+}
+
+enum DateOrder { yearMonthDay, dayMonthYear, monthDayYear }
+
+enum DateSeparator { dot, hyphen, slash }
 
 /// The currency format setting for the budget.
 @freezed

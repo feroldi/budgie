@@ -6,13 +6,13 @@ part 'currency_format.freezed.dart';
 @freezed
 abstract class CurrencyFormat with _$CurrencyFormat {
   factory CurrencyFormat({
-    required CurrencyISOCode isoCode,
-    required int decDigits,
-    required Separator decSep,
-    required bool symbolFirst,
-    required Separator groupSeparator,
-    required String currencySymbol,
-    required bool displaySymbol,
+    @required CurrencyISOCode isoCode,
+    @required int decDigits,
+    @required Separator decSep,
+    @required bool symbolFirst,
+    @required Separator groupSeparator,
+    @required String currencySymbol,
+    @required bool displaySymbol,
   }) = _CurrencyFormat;
 }
 

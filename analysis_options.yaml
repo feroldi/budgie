@@ -7,8 +7,6 @@ analyzer:
   exclude:
     - "**/*.g.dart"
     - "**/*.freezed.dart"
-  enable-experiment:
-    - non-nullable
 
 linter:
   rules:

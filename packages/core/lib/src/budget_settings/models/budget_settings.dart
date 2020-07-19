@@ -29,7 +29,7 @@ enum DateSeparator { dot, hyphen, slash }
 abstract class CurrencyFormat with _$CurrencyFormat {
   factory CurrencyFormat({
     @required CurrencyISOCode isoCode,
-    @required int decimalDigits,
+    @required int decimalDigitsAmount,
     @required Separator decimalSeparator,
     @required Separator groupSeparator,
     @required Currency currency,

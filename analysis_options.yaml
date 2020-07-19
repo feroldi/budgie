@@ -26,7 +26,6 @@ linter:
     - only_throw_errors
     - prefer_adjacent_string_concatenation
     - prefer_asserts_with_message
-    - prefer_expression_function_bodies
     - prefer_foreach
     - prefer_int_literals
     - prefer_mixin

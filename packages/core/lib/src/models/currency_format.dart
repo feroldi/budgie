@@ -1,4 +1,5 @@
 import 'package:freezed_annotation/freezed_annotation.dart';
+import 'package:dartz/dartz.dart';
 
 part 'currency_format.freezed.dart';
 
@@ -7,12 +8,11 @@ part 'currency_format.freezed.dart';
 abstract class CurrencyFormat with _$CurrencyFormat {
   factory CurrencyFormat({
     @required CurrencyISOCode isoCode,
-    @required int decDigits,
-    @required Separator decSep,
-    @required bool symbolFirst,
+    @required int decimalDigits,
+    @required Separator decimalSeparator,
+    @required Option<CurrencyPlacement> currencyPlacement,
     @required Separator groupSeparator,
     @required String currencySymbol,
-    @required bool displaySymbol,
   }) = _CurrencyFormat;
 }
 
@@ -21,3 +21,6 @@ enum CurrencyISOCode { eur, brl, usd }
 
 /// The currency separators for decimals and groups.
 enum Separator { comma, period }
+
+/// Placement of the currency symbol.
+enum CurrencyPlacement { beforeAmount, afterAmount }

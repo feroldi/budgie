@@ -12,6 +12,23 @@ abstract class BudgetSettings with _$BudgetSettings {
     @required DateFormat dateFormat,
     @required CurrencyFormat currencyFormat,
   }) = _BudgetSettings;
+
+  factory BudgetSettings.defaultValue() {
+    return BudgetSettings(
+      dateFormat: const DateFormat(
+        DateOrder.yearMonthDay,
+        DateSeparator.hyphen,
+      ),
+      currencyFormat: CurrencyFormat(
+        isoCode: CurrencyISOCode.usd,
+        decimalDigitsAmount: 2,
+        decimalSeparator: Separator.period,
+        groupSeparator: Separator.comma,
+        currency: Currency.USD,
+        currencyPlacement: some(CurrencyPlacement.beforeAmount),
+      ),
+    );
+  }
 }
 
 /// The date format setting for the budget.
@@ -25,7 +42,7 @@ abstract class DateFormat with _$DateFormat {
 
 enum DateOrder { yearMonthDay, dayMonthYear, monthDayYear }
 
-enum DateSeparator { dot, hyphen, slash }
+enum DateSeparator { hyphen, period, slash }
 
 /// The currency format setting for the budget.
 @freezed

@@ -11,7 +11,6 @@ abstract class Currency with _$Currency {
     @required String symbol,
     @required String symbolNative,
     @required int decimalDigitsAmount,
-    @required int rounding,
   }) = _Currency;
 
   static const usd = Currency(
@@ -21,7 +20,6 @@ abstract class Currency with _$Currency {
     symbol: '\$',
     symbolNative: '\$',
     decimalDigitsAmount: 2,
-    rounding: 0,
   );
 
   static const cad = Currency(
@@ -31,7 +29,6 @@ abstract class Currency with _$Currency {
     symbol: 'CA\$',
     symbolNative: '\$',
     decimalDigitsAmount: 2,
-    rounding: 0,
   );
 
   static const eur = Currency(
@@ -41,7 +38,6 @@ abstract class Currency with _$Currency {
     symbol: '€',
     symbolNative: '€',
     decimalDigitsAmount: 2,
-    rounding: 0,
   );
 
   static const aed = Currency(
@@ -51,7 +47,6 @@ abstract class Currency with _$Currency {
     symbol: 'AED',
     symbolNative: 'د.إ.‏',
     decimalDigitsAmount: 2,
-    rounding: 0,
   );
 
   static const afn = Currency(
@@ -61,7 +56,6 @@ abstract class Currency with _$Currency {
     symbol: 'Af',
     symbolNative: '؋',
     decimalDigitsAmount: 0,
-    rounding: 0,
   );
 
   static const all = Currency(
@@ -71,7 +65,6 @@ abstract class Currency with _$Currency {
     symbol: 'ALL',
     symbolNative: 'Lek',
     decimalDigitsAmount: 0,
-    rounding: 0,
   );
 
   static const amd = Currency(
@@ -81,7 +74,6 @@ abstract class Currency with _$Currency {
     symbol: 'AMD',
     symbolNative: 'դր.',
     decimalDigitsAmount: 0,
-    rounding: 0,
   );
 
   static const ars = Currency(
@@ -91,7 +83,6 @@ abstract class Currency with _$Currency {
     symbol: 'AR\$',
     symbolNative: '\$',
     decimalDigitsAmount: 2,
-    rounding: 0,
   );
 
   static const aud = Currency(
@@ -101,7 +92,6 @@ abstract class Currency with _$Currency {
     symbol: 'AU\$',
     symbolNative: '\$',
     decimalDigitsAmount: 2,
-    rounding: 0,
   );
 
   static const azn = Currency(
@@ -111,7 +101,6 @@ abstract class Currency with _$Currency {
     symbol: 'man.',
     symbolNative: 'ман.',
     decimalDigitsAmount: 2,
-    rounding: 0,
   );
 
   static const bam = Currency(
@@ -121,7 +110,6 @@ abstract class Currency with _$Currency {
     symbol: 'KM',
     symbolNative: 'KM',
     decimalDigitsAmount: 2,
-    rounding: 0,
   );
 
   static const bdt = Currency(
@@ -131,7 +119,6 @@ abstract class Currency with _$Currency {
     symbol: 'Tk',
     symbolNative: '৳',
     decimalDigitsAmount: 2,
-    rounding: 0,
   );
 
   static const bgn = Currency(
@@ -141,7 +128,6 @@ abstract class Currency with _$Currency {
     symbol: 'BGN',
     symbolNative: 'лв.',
     decimalDigitsAmount: 2,
-    rounding: 0,
   );
 
   static const bhd = Currency(
@@ -151,7 +137,6 @@ abstract class Currency with _$Currency {
     symbol: 'BD',
     symbolNative: 'د.ب.‏',
     decimalDigitsAmount: 3,
-    rounding: 0,
   );
 
   static const bif = Currency(
@@ -161,7 +146,6 @@ abstract class Currency with _$Currency {
     symbol: 'FBu',
     symbolNative: 'FBu',
     decimalDigitsAmount: 0,
-    rounding: 0,
   );
 
   static const bnd = Currency(
@@ -171,7 +155,6 @@ abstract class Currency with _$Currency {
     symbol: 'BN\$',
     symbolNative: '\$',
     decimalDigitsAmount: 2,
-    rounding: 0,
   );
 
   static const bob = Currency(
@@ -181,7 +164,6 @@ abstract class Currency with _$Currency {
     symbol: 'Bs',
     symbolNative: 'Bs',
     decimalDigitsAmount: 2,
-    rounding: 0,
   );
 
   static const brl = Currency(
@@ -191,7 +173,6 @@ abstract class Currency with _$Currency {
     symbol: 'R\$',
     symbolNative: 'R\$',
     decimalDigitsAmount: 2,
-    rounding: 0,
   );
 
   static const bwp = Currency(
@@ -201,7 +182,6 @@ abstract class Currency with _$Currency {
     symbol: 'BWP',
     symbolNative: 'P',
     decimalDigitsAmount: 2,
-    rounding: 0,
   );
 
   static const byn = Currency(
@@ -211,7 +191,6 @@ abstract class Currency with _$Currency {
     symbol: 'Br',
     symbolNative: 'руб.',
     decimalDigitsAmount: 2,
-    rounding: 0,
   );
 
   static const bzd = Currency(
@@ -221,7 +200,6 @@ abstract class Currency with _$Currency {
     symbol: 'BZ\$',
     symbolNative: '\$',
     decimalDigitsAmount: 2,
-    rounding: 0,
   );
 
   static const cdf = Currency(
@@ -231,7 +209,6 @@ abstract class Currency with _$Currency {
     symbol: 'CDF',
     symbolNative: 'FrCD',
     decimalDigitsAmount: 2,
-    rounding: 0,
   );
 
   static const chf = Currency(
@@ -241,7 +218,6 @@ abstract class Currency with _$Currency {
     symbol: 'CHF',
     symbolNative: 'CHF',
     decimalDigitsAmount: 2,
-    rounding: 0.05,
   );
 
   static const clp = Currency(
@@ -251,7 +227,6 @@ abstract class Currency with _$Currency {
     symbol: 'CL\$',
     symbolNative: '\$',
     decimalDigitsAmount: 0,
-    rounding: 0,
   );
 
   static const cny = Currency(
@@ -261,7 +236,6 @@ abstract class Currency with _$Currency {
     symbol: 'CN¥',
     symbolNative: 'CN¥',
     decimalDigitsAmount: 2,
-    rounding: 0,
   );
 
   static const cop = Currency(
@@ -271,7 +245,6 @@ abstract class Currency with _$Currency {
     symbol: 'CO\$',
     symbolNative: '\$',
     decimalDigitsAmount: 0,
-    rounding: 0,
   );
 
   static const crc = Currency(
@@ -281,7 +254,6 @@ abstract class Currency with _$Currency {
     symbol: '₡',
     symbolNative: '₡',
     decimalDigitsAmount: 0,
-    rounding: 0,
   );
 
   static const cve = Currency(
@@ -291,7 +263,6 @@ abstract class Currency with _$Currency {
     symbol: 'CV\$',
     symbolNative: 'CV\$',
     decimalDigitsAmount: 2,
-    rounding: 0,
   );
 
   static const czk = Currency(
@@ -301,7 +272,6 @@ abstract class Currency with _$Currency {
     symbol: 'Kč',
     symbolNative: 'Kč',
     decimalDigitsAmount: 2,
-    rounding: 0,
   );
 
   static const djf = Currency(
@@ -311,7 +281,6 @@ abstract class Currency with _$Currency {
     symbol: 'Fdj',
     symbolNative: 'Fdj',
     decimalDigitsAmount: 0,
-    rounding: 0,
   );
 
   static const dkk = Currency(
@@ -321,7 +290,6 @@ abstract class Currency with _$Currency {
     symbol: 'Dkr',
     symbolNative: 'kr',
     decimalDigitsAmount: 2,
-    rounding: 0,
   );
 
   static const dop = Currency(
@@ -331,7 +299,6 @@ abstract class Currency with _$Currency {
     symbol: 'RD\$',
     symbolNative: 'RD\$',
     decimalDigitsAmount: 2,
-    rounding: 0,
   );
 
   static const dzd = Currency(
@@ -341,7 +308,6 @@ abstract class Currency with _$Currency {
     symbol: 'DA',
     symbolNative: 'د.ج.‏',
     decimalDigitsAmount: 2,
-    rounding: 0,
   );
 
   static const eek = Currency(
@@ -351,7 +317,6 @@ abstract class Currency with _$Currency {
     symbol: 'Ekr',
     symbolNative: 'kr',
     decimalDigitsAmount: 2,
-    rounding: 0,
   );
 
   static const egp = Currency(
@@ -361,7 +326,6 @@ abstract class Currency with _$Currency {
     symbol: 'EGP',
     symbolNative: 'ج.م.‏',
     decimalDigitsAmount: 2,
-    rounding: 0,
   );
 
   static const ern = Currency(
@@ -371,7 +335,6 @@ abstract class Currency with _$Currency {
     symbol: 'Nfk',
     symbolNative: 'Nfk',
     decimalDigitsAmount: 2,
-    rounding: 0,
   );
 
   static const etb = Currency(
@@ -381,7 +344,6 @@ abstract class Currency with _$Currency {
     symbol: 'Br',
     symbolNative: 'Br',
     decimalDigitsAmount: 2,
-    rounding: 0,
   );
 
   static const gbp = Currency(
@@ -391,7 +353,6 @@ abstract class Currency with _$Currency {
     symbol: '£',
     symbolNative: '£',
     decimalDigitsAmount: 2,
-    rounding: 0,
   );
 
   static const gel = Currency(
@@ -401,7 +362,6 @@ abstract class Currency with _$Currency {
     symbol: 'GEL',
     symbolNative: 'GEL',
     decimalDigitsAmount: 2,
-    rounding: 0,
   );
 
   static const ghs = Currency(
@@ -411,7 +371,6 @@ abstract class Currency with _$Currency {
     symbol: 'GH₵',
     symbolNative: 'GH₵',
     decimalDigitsAmount: 2,
-    rounding: 0,
   );
 
   static const gnf = Currency(
@@ -421,7 +380,6 @@ abstract class Currency with _$Currency {
     symbol: 'FG',
     symbolNative: 'FG',
     decimalDigitsAmount: 0,
-    rounding: 0,
   );
 
   static const gtq = Currency(
@@ -431,7 +389,6 @@ abstract class Currency with _$Currency {
     symbol: 'GTQ',
     symbolNative: 'Q',
     decimalDigitsAmount: 2,
-    rounding: 0,
   );
 
   static const hkd = Currency(
@@ -441,7 +398,6 @@ abstract class Currency with _$Currency {
     symbol: 'HK\$',
     symbolNative: '\$',
     decimalDigitsAmount: 2,
-    rounding: 0,
   );
 
   static const hnl = Currency(
@@ -451,7 +407,6 @@ abstract class Currency with _$Currency {
     symbol: 'HNL',
     symbolNative: 'L',
     decimalDigitsAmount: 2,
-    rounding: 0,
   );
 
   static const hrk = Currency(
@@ -461,7 +416,6 @@ abstract class Currency with _$Currency {
     symbol: 'kn',
     symbolNative: 'kn',
     decimalDigitsAmount: 2,
-    rounding: 0,
   );
 
   static const huf = Currency(
@@ -471,7 +425,6 @@ abstract class Currency with _$Currency {
     symbol: 'Ft',
     symbolNative: 'Ft',
     decimalDigitsAmount: 0,
-    rounding: 0,
   );
 
   static const idr = Currency(
@@ -481,7 +434,6 @@ abstract class Currency with _$Currency {
     symbol: 'Rp',
     symbolNative: 'Rp',
     decimalDigitsAmount: 0,
-    rounding: 0,
   );
 
   static const ils = Currency(
@@ -491,7 +443,6 @@ abstract class Currency with _$Currency {
     symbol: '₪',
     symbolNative: '₪',
     decimalDigitsAmount: 2,
-    rounding: 0,
   );
 
   static const inr = Currency(
@@ -501,7 +452,6 @@ abstract class Currency with _$Currency {
     symbol: 'Rs',
     symbolNative: 'টকা',
     decimalDigitsAmount: 2,
-    rounding: 0,
   );
 
   static const iqd = Currency(
@@ -511,7 +461,6 @@ abstract class Currency with _$Currency {
     symbol: 'IQD',
     symbolNative: 'د.ع.‏',
     decimalDigitsAmount: 0,
-    rounding: 0,
   );
 
   static const irr = Currency(
@@ -521,7 +470,6 @@ abstract class Currency with _$Currency {
     symbol: 'IRR',
     symbolNative: '﷼',
     decimalDigitsAmount: 0,
-    rounding: 0,
   );
 
   static const isk = Currency(
@@ -531,7 +479,6 @@ abstract class Currency with _$Currency {
     symbol: 'Ikr',
     symbolNative: 'kr',
     decimalDigitsAmount: 0,
-    rounding: 0,
   );
 
   static const jmd = Currency(
@@ -541,7 +488,6 @@ abstract class Currency with _$Currency {
     symbol: 'J\$',
     symbolNative: '\$',
     decimalDigitsAmount: 2,
-    rounding: 0,
   );
 
   static const jod = Currency(
@@ -551,7 +497,6 @@ abstract class Currency with _$Currency {
     symbol: 'JD',
     symbolNative: 'د.أ.‏',
     decimalDigitsAmount: 3,
-    rounding: 0,
   );
 
   static const jpy = Currency(
@@ -561,7 +506,6 @@ abstract class Currency with _$Currency {
     symbol: '¥',
     symbolNative: '￥',
     decimalDigitsAmount: 0,
-    rounding: 0,
   );
 
   static const kes = Currency(
@@ -571,7 +515,6 @@ abstract class Currency with _$Currency {
     symbol: 'Ksh',
     symbolNative: 'Ksh',
     decimalDigitsAmount: 2,
-    rounding: 0,
   );
 
   static const khr = Currency(
@@ -581,7 +524,6 @@ abstract class Currency with _$Currency {
     symbol: 'KHR',
     symbolNative: '៛',
     decimalDigitsAmount: 2,
-    rounding: 0,
   );
 
   static const kmf = Currency(
@@ -591,7 +533,6 @@ abstract class Currency with _$Currency {
     symbol: 'CF',
     symbolNative: 'FC',
     decimalDigitsAmount: 0,
-    rounding: 0,
   );
 
   static const krw = Currency(
@@ -601,7 +542,6 @@ abstract class Currency with _$Currency {
     symbol: '₩',
     symbolNative: '₩',
     decimalDigitsAmount: 0,
-    rounding: 0,
   );
 
   static const kwd = Currency(
@@ -611,7 +551,6 @@ abstract class Currency with _$Currency {
     symbol: 'KD',
     symbolNative: 'د.ك.‏',
     decimalDigitsAmount: 3,
-    rounding: 0,
   );
 
   static const kzt = Currency(
@@ -621,7 +560,6 @@ abstract class Currency with _$Currency {
     symbol: 'KZT',
     symbolNative: 'тңг.',
     decimalDigitsAmount: 2,
-    rounding: 0,
   );
 
   static const lbp = Currency(
@@ -631,7 +569,6 @@ abstract class Currency with _$Currency {
     symbol: 'LB£',
     symbolNative: 'ل.ل.‏',
     decimalDigitsAmount: 0,
-    rounding: 0,
   );
 
   static const lkr = Currency(
@@ -641,7 +578,6 @@ abstract class Currency with _$Currency {
     symbol: 'SLRs',
     symbolNative: 'SL Re',
     decimalDigitsAmount: 2,
-    rounding: 0,
   );
 
   static const ltl = Currency(
@@ -651,7 +587,6 @@ abstract class Currency with _$Currency {
     symbol: 'Lt',
     symbolNative: 'Lt',
     decimalDigitsAmount: 2,
-    rounding: 0,
   );
 
   static const lvl = Currency(
@@ -661,7 +596,6 @@ abstract class Currency with _$Currency {
     symbol: 'Ls',
     symbolNative: 'Ls',
     decimalDigitsAmount: 2,
-    rounding: 0,
   );
 
   static const lyd = Currency(
@@ -671,7 +605,6 @@ abstract class Currency with _$Currency {
     symbol: 'LD',
     symbolNative: 'د.ل.‏',
     decimalDigitsAmount: 3,
-    rounding: 0,
   );
 
   static const mad = Currency(
@@ -681,7 +614,6 @@ abstract class Currency with _$Currency {
     symbol: 'MAD',
     symbolNative: 'د.م.‏',
     decimalDigitsAmount: 2,
-    rounding: 0,
   );
 
   static const mdl = Currency(
@@ -691,7 +623,6 @@ abstract class Currency with _$Currency {
     symbol: 'MDL',
     symbolNative: 'MDL',
     decimalDigitsAmount: 2,
-    rounding: 0,
   );
 
   static const mga = Currency(
@@ -701,7 +632,6 @@ abstract class Currency with _$Currency {
     symbol: 'MGA',
     symbolNative: 'MGA',
     decimalDigitsAmount: 0,
-    rounding: 0,
   );
 
   static const mkd = Currency(
@@ -711,7 +641,6 @@ abstract class Currency with _$Currency {
     symbol: 'MKD',
     symbolNative: 'MKD',
     decimalDigitsAmount: 2,
-    rounding: 0,
   );
 
   static const mmk = Currency(
@@ -721,7 +650,6 @@ abstract class Currency with _$Currency {
     symbol: 'MMK',
     symbolNative: 'K',
     decimalDigitsAmount: 0,
-    rounding: 0,
   );
 
   static const mop = Currency(
@@ -731,7 +659,6 @@ abstract class Currency with _$Currency {
     symbol: 'MOP\$',
     symbolNative: 'MOP\$',
     decimalDigitsAmount: 2,
-    rounding: 0,
   );
 
   static const mur = Currency(
@@ -741,7 +668,6 @@ abstract class Currency with _$Currency {
     symbol: 'MURs',
     symbolNative: 'MURs',
     decimalDigitsAmount: 0,
-    rounding: 0,
   );
 
   static const mxn = Currency(
@@ -751,7 +677,6 @@ abstract class Currency with _$Currency {
     symbol: 'MX\$',
     symbolNative: '\$',
     decimalDigitsAmount: 2,
-    rounding: 0,
   );
 
   static const myr = Currency(
@@ -761,7 +686,6 @@ abstract class Currency with _$Currency {
     symbol: 'RM',
     symbolNative: 'RM',
     decimalDigitsAmount: 2,
-    rounding: 0,
   );
 
   static const mzn = Currency(
@@ -771,7 +695,6 @@ abstract class Currency with _$Currency {
     symbol: 'MTn',
     symbolNative: 'MTn',
     decimalDigitsAmount: 2,
-    rounding: 0,
   );
 
   static const nad = Currency(
@@ -781,7 +704,6 @@ abstract class Currency with _$Currency {
     symbol: 'N\$',
     symbolNative: 'N\$',
     decimalDigitsAmount: 2,
-    rounding: 0,
   );
 
   static const ngn = Currency(
@@ -791,7 +713,6 @@ abstract class Currency with _$Currency {
     symbol: '₦',
     symbolNative: '₦',
     decimalDigitsAmount: 2,
-    rounding: 0,
   );
 
   static const nio = Currency(
@@ -801,7 +722,6 @@ abstract class Currency with _$Currency {
     symbol: 'C\$',
     symbolNative: 'C\$',
     decimalDigitsAmount: 2,
-    rounding: 0,
   );
 
   static const nok = Currency(
@@ -811,7 +731,6 @@ abstract class Currency with _$Currency {
     symbol: 'Nkr',
     symbolNative: 'kr',
     decimalDigitsAmount: 2,
-    rounding: 0,
   );
 
   static const npr = Currency(
@@ -821,7 +740,6 @@ abstract class Currency with _$Currency {
     symbol: 'NPRs',
     symbolNative: 'नेरू',
     decimalDigitsAmount: 2,
-    rounding: 0,
   );
 
   static const nzd = Currency(
@@ -831,7 +749,6 @@ abstract class Currency with _$Currency {
     symbol: 'NZ\$',
     symbolNative: '\$',
     decimalDigitsAmount: 2,
-    rounding: 0,
   );
 
   static const omr = Currency(
@@ -841,7 +758,6 @@ abstract class Currency with _$Currency {
     symbol: 'OMR',
     symbolNative: 'ر.ع.‏',
     decimalDigitsAmount: 3,
-    rounding: 0,
   );
 
   static const pab = Currency(
@@ -851,7 +767,6 @@ abstract class Currency with _$Currency {
     symbol: 'B/.',
     symbolNative: 'B/.',
     decimalDigitsAmount: 2,
-    rounding: 0,
   );
 
   static const pen = Currency(
@@ -861,7 +776,6 @@ abstract class Currency with _$Currency {
     symbol: 'S/.',
     symbolNative: 'S/.',
     decimalDigitsAmount: 2,
-    rounding: 0,
   );
 
   static const php = Currency(
@@ -871,7 +785,6 @@ abstract class Currency with _$Currency {
     symbol: '₱',
     symbolNative: '₱',
     decimalDigitsAmount: 2,
-    rounding: 0,
   );
 
   static const pkr = Currency(
@@ -881,7 +794,6 @@ abstract class Currency with _$Currency {
     symbol: 'PKRs',
     symbolNative: '₨',
     decimalDigitsAmount: 0,
-    rounding: 0,
   );
 
   static const pln = Currency(
@@ -891,7 +803,6 @@ abstract class Currency with _$Currency {
     symbol: 'zł',
     symbolNative: 'zł',
     decimalDigitsAmount: 2,
-    rounding: 0,
   );
 
   static const pyg = Currency(
@@ -901,7 +812,6 @@ abstract class Currency with _$Currency {
     symbol: '₲',
     symbolNative: '₲',
     decimalDigitsAmount: 0,
-    rounding: 0,
   );
 
   static const qar = Currency(
@@ -911,7 +821,6 @@ abstract class Currency with _$Currency {
     symbol: 'QR',
     symbolNative: 'ر.ق.‏',
     decimalDigitsAmount: 2,
-    rounding: 0,
   );
 
   static const ron = Currency(
@@ -921,7 +830,6 @@ abstract class Currency with _$Currency {
     symbol: 'RON',
     symbolNative: 'RON',
     decimalDigitsAmount: 2,
-    rounding: 0,
   );
 
   static const rsd = Currency(
@@ -931,7 +839,6 @@ abstract class Currency with _$Currency {
     symbol: 'din.',
     symbolNative: 'дин.',
     decimalDigitsAmount: 0,
-    rounding: 0,
   );
 
   static const rub = Currency(
@@ -941,7 +848,6 @@ abstract class Currency with _$Currency {
     symbol: 'RUB',
     symbolNative: '₽.',
     decimalDigitsAmount: 2,
-    rounding: 0,
   );
 
   static const rwf = Currency(
@@ -951,7 +857,6 @@ abstract class Currency with _$Currency {
     symbol: 'RWF',
     symbolNative: 'FR',
     decimalDigitsAmount: 0,
-    rounding: 0,
   );
 
   static const sar = Currency(
@@ -961,7 +866,6 @@ abstract class Currency with _$Currency {
     symbol: 'SR',
     symbolNative: 'ر.س.‏',
     decimalDigitsAmount: 2,
-    rounding: 0,
   );
 
   static const sdg = Currency(
@@ -971,7 +875,6 @@ abstract class Currency with _$Currency {
     symbol: 'SDG',
     symbolNative: 'SDG',
     decimalDigitsAmount: 2,
-    rounding: 0,
   );
 
   static const sek = Currency(
@@ -981,7 +884,6 @@ abstract class Currency with _$Currency {
     symbol: 'Skr',
     symbolNative: 'kr',
     decimalDigitsAmount: 2,
-    rounding: 0,
   );
 
   static const sgd = Currency(
@@ -991,7 +893,6 @@ abstract class Currency with _$Currency {
     symbol: 'S\$',
     symbolNative: '\$',
     decimalDigitsAmount: 2,
-    rounding: 0,
   );
 
   static const sos = Currency(
@@ -1001,7 +902,6 @@ abstract class Currency with _$Currency {
     symbol: 'Ssh',
     symbolNative: 'Ssh',
     decimalDigitsAmount: 0,
-    rounding: 0,
   );
 
   static const syp = Currency(
@@ -1011,7 +911,6 @@ abstract class Currency with _$Currency {
     symbol: 'SY£',
     symbolNative: 'ل.س.‏',
     decimalDigitsAmount: 0,
-    rounding: 0,
   );
 
   static const thb = Currency(
@@ -1021,7 +920,6 @@ abstract class Currency with _$Currency {
     symbol: '฿',
     symbolNative: '฿',
     decimalDigitsAmount: 2,
-    rounding: 0,
   );
 
   static const tnd = Currency(
@@ -1031,7 +929,6 @@ abstract class Currency with _$Currency {
     symbol: 'DT',
     symbolNative: 'د.ت.‏',
     decimalDigitsAmount: 3,
-    rounding: 0,
   );
 
   static const top = Currency(
@@ -1041,17 +938,6 @@ abstract class Currency with _$Currency {
     symbol: 'T\$',
     symbolNative: 'T\$',
     decimalDigitsAmount: 2,
-    rounding: 0,
-  );
-
-  static const try = Currency(
-    code: 'TRY',
-    name: 'Turkish Lira',
-    namePlural: 'Turkish Lira',
-    symbol: 'TL',
-    symbolNative: 'TL',
-    decimalDigitsAmount: 2,
-    rounding: 0,
   );
 
   static const ttd = Currency(
@@ -1061,7 +947,6 @@ abstract class Currency with _$Currency {
     symbol: 'TT\$',
     symbolNative: '\$',
     decimalDigitsAmount: 2,
-    rounding: 0,
   );
 
   static const twd = Currency(
@@ -1071,7 +956,6 @@ abstract class Currency with _$Currency {
     symbol: 'NT\$',
     symbolNative: 'NT\$',
     decimalDigitsAmount: 2,
-    rounding: 0,
   );
 
   static const tzs = Currency(
@@ -1081,7 +965,6 @@ abstract class Currency with _$Currency {
     symbol: 'TSh',
     symbolNative: 'TSh',
     decimalDigitsAmount: 0,
-    rounding: 0,
   );
 
   static const uah = Currency(
@@ -1091,7 +974,6 @@ abstract class Currency with _$Currency {
     symbol: '₴',
     symbolNative: '₴',
     decimalDigitsAmount: 2,
-    rounding: 0,
   );
 
   static const ugx = Currency(
@@ -1101,7 +983,6 @@ abstract class Currency with _$Currency {
     symbol: 'USh',
     symbolNative: 'USh',
     decimalDigitsAmount: 0,
-    rounding: 0,
   );
 
   static const uyu = Currency(
@@ -1111,7 +992,6 @@ abstract class Currency with _$Currency {
     symbol: '\$U',
     symbolNative: '\$',
     decimalDigitsAmount: 2,
-    rounding: 0,
   );
 
   static const uzs = Currency(
@@ -1121,7 +1001,6 @@ abstract class Currency with _$Currency {
     symbol: 'UZS',
     symbolNative: 'UZS',
     decimalDigitsAmount: 0,
-    rounding: 0,
   );
 
   static const vef = Currency(
@@ -1131,7 +1010,6 @@ abstract class Currency with _$Currency {
     symbol: 'Bs.F.',
     symbolNative: 'Bs.F.',
     decimalDigitsAmount: 2,
-    rounding: 0,
   );
 
   static const vnd = Currency(
@@ -1141,7 +1019,6 @@ abstract class Currency with _$Currency {
     symbol: '₫',
     symbolNative: '₫',
     decimalDigitsAmount: 0,
-    rounding: 0,
   );
 
   static const xaf = Currency(
@@ -1151,7 +1028,6 @@ abstract class Currency with _$Currency {
     symbol: 'FCFA',
     symbolNative: 'FCFA',
     decimalDigitsAmount: 0,
-    rounding: 0,
   );
 
   static const xof = Currency(
@@ -1161,7 +1037,6 @@ abstract class Currency with _$Currency {
     symbol: 'CFA',
     symbolNative: 'CFA',
     decimalDigitsAmount: 0,
-    rounding: 0,
   );
 
   static const yer = Currency(
@@ -1171,7 +1046,6 @@ abstract class Currency with _$Currency {
     symbol: 'YR',
     symbolNative: 'ر.ي.‏',
     decimalDigitsAmount: 0,
-    rounding: 0,
   );
 
   static const zar = Currency(
@@ -1181,7 +1055,6 @@ abstract class Currency with _$Currency {
     symbol: 'R',
     symbolNative: 'R',
     decimalDigitsAmount: 2,
-    rounding: 0,
   );
 
   static const zmk = Currency(
@@ -1191,7 +1064,6 @@ abstract class Currency with _$Currency {
     symbol: 'ZK',
     symbolNative: 'ZK',
     decimalDigitsAmount: 0,
-    rounding: 0,
   );
 
   static const zwl = Currency(
@@ -1201,6 +1073,5 @@ abstract class Currency with _$Currency {
     symbol: 'ZWL\$',
     symbolNative: 'ZWL\$',
     decimalDigitsAmount: 0,
-    rounding: 0,
   );
 }

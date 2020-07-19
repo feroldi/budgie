@@ -13,22 +13,17 @@ abstract class BudgetSettings with _$BudgetSettings {
     @required CurrencyFormat currencyFormat,
   }) = _BudgetSettings;
 
-  factory BudgetSettings.defaultValue() {
-    return BudgetSettings(
-      dateFormat: const DateFormat(
-        DateOrder.yearMonthDay,
-        DateSeparator.hyphen,
-      ),
-      currencyFormat: CurrencyFormat(
-        isoCode: CurrencyISOCode.usd,
-        decimalDigitsAmount: 2,
-        decimalSeparator: Separator.period,
-        groupSeparator: Separator.comma,
-        currency: Currency.USD,
-        currencyPlacement: some(CurrencyPlacement.beforeAmount),
-      ),
-    );
-  }
+  static const defaultValue = BudgetSettings(
+    dateFormat: DateFormat(DateOrder.yearMonthDay, DateSeparator.hyphen),
+    currencyFormat: CurrencyFormat(
+      isoCode: CurrencyISOCode.usd,
+      decimalDigitsAmount: 2,
+      decimalSeparator: Separator.period,
+      groupSeparator: Separator.comma,
+      currency: Currency.USD,
+      currencyPlacement: Some(CurrencyPlacement.beforeAmount),
+    ),
+  );
 }
 
 /// The date format setting for the budget.

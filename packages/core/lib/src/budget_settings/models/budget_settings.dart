@@ -8,7 +8,7 @@ part 'budget_settings.freezed.dart';
 /// The customizable options for the budget.
 @freezed
 abstract class BudgetSettings with _$BudgetSettings {
-  factory BudgetSettings({
+  const factory BudgetSettings({
     @required DateFormat dateFormat,
     @required CurrencyFormat currencyFormat,
   }) = _BudgetSettings;
@@ -17,7 +17,10 @@ abstract class BudgetSettings with _$BudgetSettings {
 /// The date format setting for the budget.
 @freezed
 abstract class DateFormat with _$DateFormat {
-  factory DateFormat(DateOrder order, DateSeparator separator) = _DateFormat;
+  const factory DateFormat(
+    DateOrder order,
+    DateSeparator separator,
+  ) = _DateFormat;
 }
 
 enum DateOrder { yearMonthDay, dayMonthYear, monthDayYear }
@@ -27,7 +30,7 @@ enum DateSeparator { dot, hyphen, slash }
 /// The currency format setting for the budget.
 @freezed
 abstract class CurrencyFormat with _$CurrencyFormat {
-  factory CurrencyFormat({
+  const factory CurrencyFormat({
     @required CurrencyISOCode isoCode,
     @required int decimalDigitsAmount,
     @required Separator decimalSeparator,

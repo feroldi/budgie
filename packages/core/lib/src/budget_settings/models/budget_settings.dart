@@ -1,6 +1,8 @@
 import 'package:freezed_annotation/freezed_annotation.dart';
 import 'package:dartz/dartz.dart';
 
+import 'currency.dart';
+
 part 'budget_settings.freezed.dart';
 
 /// The customizable options for the budget.
@@ -29,9 +31,9 @@ abstract class CurrencyFormat with _$CurrencyFormat {
     @required CurrencyISOCode isoCode,
     @required int decimalDigits,
     @required Separator decimalSeparator,
-    @required Option<CurrencyPlacement> currencyPlacement,
     @required Separator groupSeparator,
-    @required String currencySymbol,
+    @required Currency currency,
+    @required Option<CurrencyPlacement> currencyPlacement,
   }) = _CurrencyFormat;
 }
 

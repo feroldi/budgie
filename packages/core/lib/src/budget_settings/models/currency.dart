@@ -14,7 +14,7 @@ abstract class Currency with _$Currency {
     @required int rounding,
   }) = _Currency;
 
-  static const USD = Currency(
+  static const usd = Currency(
     code: 'USD',
     name: 'US Dollar',
     namePlural: 'US dollars',
@@ -24,7 +24,7 @@ abstract class Currency with _$Currency {
     rounding: 0,
   );
 
-  static const CAD = Currency(
+  static const cad = Currency(
     code: 'CAD',
     name: 'Canadian Dollar',
     namePlural: 'Canadian dollars',
@@ -34,7 +34,7 @@ abstract class Currency with _$Currency {
     rounding: 0,
   );
 
-  static const EUR = Currency(
+  static const eur = Currency(
     code: 'EUR',
     name: 'Euro',
     namePlural: 'euros',
@@ -44,7 +44,7 @@ abstract class Currency with _$Currency {
     rounding: 0,
   );
 
-  static const AED = Currency(
+  static const aed = Currency(
     code: 'AED',
     name: 'United Arab Emirates Dirham',
     namePlural: 'UAE dirhams',
@@ -54,7 +54,7 @@ abstract class Currency with _$Currency {
     rounding: 0,
   );
 
-  static const AFN = Currency(
+  static const afn = Currency(
     code: 'AFN',
     name: 'Afghan Afghani',
     namePlural: 'Afghan Afghanis',
@@ -64,7 +64,7 @@ abstract class Currency with _$Currency {
     rounding: 0,
   );
 
-  static const ALL = Currency(
+  static const all = Currency(
     code: 'ALL',
     name: 'Albanian Lek',
     namePlural: 'Albanian lekë',
@@ -74,7 +74,7 @@ abstract class Currency with _$Currency {
     rounding: 0,
   );
 
-  static const AMD = Currency(
+  static const amd = Currency(
     code: 'AMD',
     name: 'Armenian Dram',
     namePlural: 'Armenian drams',
@@ -84,7 +84,7 @@ abstract class Currency with _$Currency {
     rounding: 0,
   );
 
-  static const ARS = Currency(
+  static const ars = Currency(
     code: 'ARS',
     name: 'Argentine Peso',
     namePlural: 'Argentine pesos',
@@ -94,7 +94,7 @@ abstract class Currency with _$Currency {
     rounding: 0,
   );
 
-  static const AUD = Currency(
+  static const aud = Currency(
     code: 'AUD',
     name: 'Australian Dollar',
     namePlural: 'Australian dollars',
@@ -104,7 +104,7 @@ abstract class Currency with _$Currency {
     rounding: 0,
   );
 
-  static const AZN = Currency(
+  static const azn = Currency(
     code: 'AZN',
     name: 'Azerbaijani Manat',
     namePlural: 'Azerbaijani manats',
@@ -114,7 +114,7 @@ abstract class Currency with _$Currency {
     rounding: 0,
   );
 
-  static const BAM = Currency(
+  static const bam = Currency(
     code: 'BAM',
     name: 'Bosnia-Herzegovina Convertible Mark',
     namePlural: 'Bosnia-Herzegovina convertible marks',
@@ -124,7 +124,7 @@ abstract class Currency with _$Currency {
     rounding: 0,
   );
 
-  static const BDT = Currency(
+  static const bdt = Currency(
     code: 'BDT',
     name: 'Bangladeshi Taka',
     namePlural: 'Bangladeshi takas',
@@ -134,7 +134,7 @@ abstract class Currency with _$Currency {
     rounding: 0,
   );
 
-  static const BGN = Currency(
+  static const bgn = Currency(
     code: 'BGN',
     name: 'Bulgarian Lev',
     namePlural: 'Bulgarian leva',
@@ -144,7 +144,7 @@ abstract class Currency with _$Currency {
     rounding: 0,
   );
 
-  static const BHD = Currency(
+  static const bhd = Currency(
     code: 'BHD',
     name: 'Bahraini Dinar',
     namePlural: 'Bahraini dinars',
@@ -154,7 +154,7 @@ abstract class Currency with _$Currency {
     rounding: 0,
   );
 
-  static const BIF = Currency(
+  static const bif = Currency(
     code: 'BIF',
     name: 'Burundian Franc',
     namePlural: 'Burundian francs',
@@ -164,7 +164,7 @@ abstract class Currency with _$Currency {
     rounding: 0,
   );
 
-  static const BND = Currency(
+  static const bnd = Currency(
     code: 'BND',
     name: 'Brunei Dollar',
     namePlural: 'Brunei dollars',
@@ -174,7 +174,7 @@ abstract class Currency with _$Currency {
     rounding: 0,
   );
 
-  static const BOB = Currency(
+  static const bob = Currency(
     code: 'BOB',
     name: 'Bolivian Boliviano',
     namePlural: 'Bolivian bolivianos',
@@ -184,7 +184,7 @@ abstract class Currency with _$Currency {
     rounding: 0,
   );
 
-  static const BRL = Currency(
+  static const brl = Currency(
     code: 'BRL',
     name: 'Brazilian Real',
     namePlural: 'Brazilian reals',
@@ -194,7 +194,7 @@ abstract class Currency with _$Currency {
     rounding: 0,
   );
 
-  static const BWP = Currency(
+  static const bwp = Currency(
     code: 'BWP',
     name: 'Botswanan Pula',
     namePlural: 'Botswanan pulas',
@@ -204,7 +204,7 @@ abstract class Currency with _$Currency {
     rounding: 0,
   );
 
-  static const BYN = Currency(
+  static const byn = Currency(
     code: 'BYN',
     name: 'Belarusian Ruble',
     namePlural: 'Belarusian rubles',
@@ -214,7 +214,7 @@ abstract class Currency with _$Currency {
     rounding: 0,
   );
 
-  static const BZD = Currency(
+  static const bzd = Currency(
     code: 'BZD',
     name: 'Belize Dollar',
     namePlural: 'Belize dollars',
@@ -224,7 +224,7 @@ abstract class Currency with _$Currency {
     rounding: 0,
   );
 
-  static const CDF = Currency(
+  static const cdf = Currency(
     code: 'CDF',
     name: 'Congolese Franc',
     namePlural: 'Congolese francs',
@@ -234,7 +234,7 @@ abstract class Currency with _$Currency {
     rounding: 0,
   );
 
-  static const CHF = Currency(
+  static const chf = Currency(
     code: 'CHF',
     name: 'Swiss Franc',
     namePlural: 'Swiss francs',
@@ -244,7 +244,7 @@ abstract class Currency with _$Currency {
     rounding: 0.05,
   );
 
-  static const CLP = Currency(
+  static const clp = Currency(
     code: 'CLP',
     name: 'Chilean Peso',
     namePlural: 'Chilean pesos',
@@ -254,7 +254,7 @@ abstract class Currency with _$Currency {
     rounding: 0,
   );
 
-  static const CNY = Currency(
+  static const cny = Currency(
     code: 'CNY',
     name: 'Chinese Yuan',
     namePlural: 'Chinese yuan',
@@ -264,7 +264,7 @@ abstract class Currency with _$Currency {
     rounding: 0,
   );
 
-  static const COP = Currency(
+  static const cop = Currency(
     code: 'COP',
     name: 'Colombian Peso',
     namePlural: 'Colombian pesos',
@@ -274,7 +274,7 @@ abstract class Currency with _$Currency {
     rounding: 0,
   );
 
-  static const CRC = Currency(
+  static const crc = Currency(
     code: 'CRC',
     name: 'Costa Rican Colón',
     namePlural: 'Costa Rican colóns',
@@ -284,7 +284,7 @@ abstract class Currency with _$Currency {
     rounding: 0,
   );
 
-  static const CVE = Currency(
+  static const cve = Currency(
     code: 'CVE',
     name: 'Cape Verdean Escudo',
     namePlural: 'Cape Verdean escudos',
@@ -294,7 +294,7 @@ abstract class Currency with _$Currency {
     rounding: 0,
   );
 
-  static const CZK = Currency(
+  static const czk = Currency(
     code: 'CZK',
     name: 'Czech Republic Koruna',
     namePlural: 'Czech Republic korunas',
@@ -304,7 +304,7 @@ abstract class Currency with _$Currency {
     rounding: 0,
   );
 
-  static const DJF = Currency(
+  static const djf = Currency(
     code: 'DJF',
     name: 'Djiboutian Franc',
     namePlural: 'Djiboutian francs',
@@ -314,7 +314,7 @@ abstract class Currency with _$Currency {
     rounding: 0,
   );
 
-  static const DKK = Currency(
+  static const dkk = Currency(
     code: 'DKK',
     name: 'Danish Krone',
     namePlural: 'Danish kroner',
@@ -324,7 +324,7 @@ abstract class Currency with _$Currency {
     rounding: 0,
   );
 
-  static const DOP = Currency(
+  static const dop = Currency(
     code: 'DOP',
     name: 'Dominican Peso',
     namePlural: 'Dominican pesos',
@@ -334,7 +334,7 @@ abstract class Currency with _$Currency {
     rounding: 0,
   );
 
-  static const DZD = Currency(
+  static const dzd = Currency(
     code: 'DZD',
     name: 'Algerian Dinar',
     namePlural: 'Algerian dinars',
@@ -344,7 +344,7 @@ abstract class Currency with _$Currency {
     rounding: 0,
   );
 
-  static const EEK = Currency(
+  static const eek = Currency(
     code: 'EEK',
     name: 'Estonian Kroon',
     namePlural: 'Estonian kroons',
@@ -354,7 +354,7 @@ abstract class Currency with _$Currency {
     rounding: 0,
   );
 
-  static const EGP = Currency(
+  static const egp = Currency(
     code: 'EGP',
     name: 'Egyptian Pound',
     namePlural: 'Egyptian pounds',
@@ -364,7 +364,7 @@ abstract class Currency with _$Currency {
     rounding: 0,
   );
 
-  static const ERN = Currency(
+  static const ern = Currency(
     code: 'ERN',
     name: 'Eritrean Nakfa',
     namePlural: 'Eritrean nakfas',
@@ -374,7 +374,7 @@ abstract class Currency with _$Currency {
     rounding: 0,
   );
 
-  static const ETB = Currency(
+  static const etb = Currency(
     code: 'ETB',
     name: 'Ethiopian Birr',
     namePlural: 'Ethiopian birrs',
@@ -384,7 +384,7 @@ abstract class Currency with _$Currency {
     rounding: 0,
   );
 
-  static const GBP = Currency(
+  static const gbp = Currency(
     code: 'GBP',
     name: 'British Pound Sterling',
     namePlural: 'British pounds sterling',
@@ -394,7 +394,7 @@ abstract class Currency with _$Currency {
     rounding: 0,
   );
 
-  static const GEL = Currency(
+  static const gel = Currency(
     code: 'GEL',
     name: 'Georgian Lari',
     namePlural: 'Georgian laris',
@@ -404,7 +404,7 @@ abstract class Currency with _$Currency {
     rounding: 0,
   );
 
-  static const GHS = Currency(
+  static const ghs = Currency(
     code: 'GHS',
     name: 'Ghanaian Cedi',
     namePlural: 'Ghanaian cedis',
@@ -414,7 +414,7 @@ abstract class Currency with _$Currency {
     rounding: 0,
   );
 
-  static const GNF = Currency(
+  static const gnf = Currency(
     code: 'GNF',
     name: 'Guinean Franc',
     namePlural: 'Guinean francs',
@@ -424,7 +424,7 @@ abstract class Currency with _$Currency {
     rounding: 0,
   );
 
-  static const GTQ = Currency(
+  static const gtq = Currency(
     code: 'GTQ',
     name: 'Guatemalan Quetzal',
     namePlural: 'Guatemalan quetzals',
@@ -434,7 +434,7 @@ abstract class Currency with _$Currency {
     rounding: 0,
   );
 
-  static const HKD = Currency(
+  static const hkd = Currency(
     code: 'HKD',
     name: 'Hong Kong Dollar',
     namePlural: 'Hong Kong dollars',
@@ -444,7 +444,7 @@ abstract class Currency with _$Currency {
     rounding: 0,
   );
 
-  static const HNL = Currency(
+  static const hnl = Currency(
     code: 'HNL',
     name: 'Honduran Lempira',
     namePlural: 'Honduran lempiras',
@@ -454,7 +454,7 @@ abstract class Currency with _$Currency {
     rounding: 0,
   );
 
-  static const HRK = Currency(
+  static const hrk = Currency(
     code: 'HRK',
     name: 'Croatian Kuna',
     namePlural: 'Croatian kunas',
@@ -464,7 +464,7 @@ abstract class Currency with _$Currency {
     rounding: 0,
   );
 
-  static const HUF = Currency(
+  static const huf = Currency(
     code: 'HUF',
     name: 'Hungarian Forint',
     namePlural: 'Hungarian forints',
@@ -474,7 +474,7 @@ abstract class Currency with _$Currency {
     rounding: 0,
   );
 
-  static const IDR = Currency(
+  static const idr = Currency(
     code: 'IDR',
     name: 'Indonesian Rupiah',
     namePlural: 'Indonesian rupiahs',
@@ -484,7 +484,7 @@ abstract class Currency with _$Currency {
     rounding: 0,
   );
 
-  static const ILS = Currency(
+  static const ils = Currency(
     code: 'ILS',
     name: 'Israeli New Sheqel',
     namePlural: 'Israeli new sheqels',
@@ -494,7 +494,7 @@ abstract class Currency with _$Currency {
     rounding: 0,
   );
 
-  static const INR = Currency(
+  static const inr = Currency(
     code: 'INR',
     name: 'Indian Rupee',
     namePlural: 'Indian rupees',
@@ -504,7 +504,7 @@ abstract class Currency with _$Currency {
     rounding: 0,
   );
 
-  static const IQD = Currency(
+  static const iqd = Currency(
     code: 'IQD',
     name: 'Iraqi Dinar',
     namePlural: 'Iraqi dinars',
@@ -514,7 +514,7 @@ abstract class Currency with _$Currency {
     rounding: 0,
   );
 
-  static const IRR = Currency(
+  static const irr = Currency(
     code: 'IRR',
     name: 'Iranian Rial',
     namePlural: 'Iranian rials',
@@ -524,7 +524,7 @@ abstract class Currency with _$Currency {
     rounding: 0,
   );
 
-  static const ISK = Currency(
+  static const isk = Currency(
     code: 'ISK',
     name: 'Icelandic Króna',
     namePlural: 'Icelandic krónur',
@@ -534,7 +534,7 @@ abstract class Currency with _$Currency {
     rounding: 0,
   );
 
-  static const JMD = Currency(
+  static const jmd = Currency(
     code: 'JMD',
     name: 'Jamaican Dollar',
     namePlural: 'Jamaican dollars',
@@ -544,7 +544,7 @@ abstract class Currency with _$Currency {
     rounding: 0,
   );
 
-  static const JOD = Currency(
+  static const jod = Currency(
     code: 'JOD',
     name: 'Jordanian Dinar',
     namePlural: 'Jordanian dinars',
@@ -554,7 +554,7 @@ abstract class Currency with _$Currency {
     rounding: 0,
   );
 
-  static const JPY = Currency(
+  static const jpy = Currency(
     code: 'JPY',
     name: 'Japanese Yen',
     namePlural: 'Japanese yen',
@@ -564,7 +564,7 @@ abstract class Currency with _$Currency {
     rounding: 0,
   );
 
-  static const KES = Currency(
+  static const kes = Currency(
     code: 'KES',
     name: 'Kenyan Shilling',
     namePlural: 'Kenyan shillings',
@@ -574,7 +574,7 @@ abstract class Currency with _$Currency {
     rounding: 0,
   );
 
-  static const KHR = Currency(
+  static const khr = Currency(
     code: 'KHR',
     name: 'Cambodian Riel',
     namePlural: 'Cambodian riels',
@@ -584,7 +584,7 @@ abstract class Currency with _$Currency {
     rounding: 0,
   );
 
-  static const KMF = Currency(
+  static const kmf = Currency(
     code: 'KMF',
     name: 'Comorian Franc',
     namePlural: 'Comorian francs',
@@ -594,7 +594,7 @@ abstract class Currency with _$Currency {
     rounding: 0,
   );
 
-  static const KRW = Currency(
+  static const krw = Currency(
     code: 'KRW',
     name: 'South Korean Won',
     namePlural: 'South Korean won',
@@ -604,7 +604,7 @@ abstract class Currency with _$Currency {
     rounding: 0,
   );
 
-  static const KWD = Currency(
+  static const kwd = Currency(
     code: 'KWD',
     name: 'Kuwaiti Dinar',
     namePlural: 'Kuwaiti dinars',
@@ -614,7 +614,7 @@ abstract class Currency with _$Currency {
     rounding: 0,
   );
 
-  static const KZT = Currency(
+  static const kzt = Currency(
     code: 'KZT',
     name: 'Kazakhstani Tenge',
     namePlural: 'Kazakhstani tenges',
@@ -624,7 +624,7 @@ abstract class Currency with _$Currency {
     rounding: 0,
   );
 
-  static const LBP = Currency(
+  static const lbp = Currency(
     code: 'LBP',
     name: 'Lebanese Pound',
     namePlural: 'Lebanese pounds',
@@ -634,7 +634,7 @@ abstract class Currency with _$Currency {
     rounding: 0,
   );
 
-  static const LKR = Currency(
+  static const lkr = Currency(
     code: 'LKR',
     name: 'Sri Lankan Rupee',
     namePlural: 'Sri Lankan rupees',
@@ -644,7 +644,7 @@ abstract class Currency with _$Currency {
     rounding: 0,
   );
 
-  static const LTL = Currency(
+  static const ltl = Currency(
     code: 'LTL',
     name: 'Lithuanian Litas',
     namePlural: 'Lithuanian litai',
@@ -654,7 +654,7 @@ abstract class Currency with _$Currency {
     rounding: 0,
   );
 
-  static const LVL = Currency(
+  static const lvl = Currency(
     code: 'LVL',
     name: 'Latvian Lats',
     namePlural: 'Latvian lati',
@@ -664,7 +664,7 @@ abstract class Currency with _$Currency {
     rounding: 0,
   );
 
-  static const LYD = Currency(
+  static const lyd = Currency(
     code: 'LYD',
     name: 'Libyan Dinar',
     namePlural: 'Libyan dinars',
@@ -674,7 +674,7 @@ abstract class Currency with _$Currency {
     rounding: 0,
   );
 
-  static const MAD = Currency(
+  static const mad = Currency(
     code: 'MAD',
     name: 'Moroccan Dirham',
     namePlural: 'Moroccan dirhams',
@@ -684,7 +684,7 @@ abstract class Currency with _$Currency {
     rounding: 0,
   );
 
-  static const MDL = Currency(
+  static const mdl = Currency(
     code: 'MDL',
     name: 'Moldovan Leu',
     namePlural: 'Moldovan lei',
@@ -694,7 +694,7 @@ abstract class Currency with _$Currency {
     rounding: 0,
   );
 
-  static const MGA = Currency(
+  static const mga = Currency(
     code: 'MGA',
     name: 'Malagasy Ariary',
     namePlural: 'Malagasy Ariaries',
@@ -704,7 +704,7 @@ abstract class Currency with _$Currency {
     rounding: 0,
   );
 
-  static const MKD = Currency(
+  static const mkd = Currency(
     code: 'MKD',
     name: 'Macedonian Denar',
     namePlural: 'Macedonian denari',
@@ -714,7 +714,7 @@ abstract class Currency with _$Currency {
     rounding: 0,
   );
 
-  static const MMK = Currency(
+  static const mmk = Currency(
     code: 'MMK',
     name: 'Myanma Kyat',
     namePlural: 'Myanma kyats',
@@ -724,7 +724,7 @@ abstract class Currency with _$Currency {
     rounding: 0,
   );
 
-  static const MOP = Currency(
+  static const mop = Currency(
     code: 'MOP',
     name: 'Macanese Pataca',
     namePlural: 'Macanese patacas',
@@ -734,7 +734,7 @@ abstract class Currency with _$Currency {
     rounding: 0,
   );
 
-  static const MUR = Currency(
+  static const mur = Currency(
     code: 'MUR',
     name: 'Mauritian Rupee',
     namePlural: 'Mauritian rupees',
@@ -744,7 +744,7 @@ abstract class Currency with _$Currency {
     rounding: 0,
   );
 
-  static const MXN = Currency(
+  static const mxn = Currency(
     code: 'MXN',
     name: 'Mexican Peso',
     namePlural: 'Mexican pesos',
@@ -754,7 +754,7 @@ abstract class Currency with _$Currency {
     rounding: 0,
   );
 
-  static const MYR = Currency(
+  static const myr = Currency(
     code: 'MYR',
     name: 'Malaysian Ringgit',
     namePlural: 'Malaysian ringgits',
@@ -764,7 +764,7 @@ abstract class Currency with _$Currency {
     rounding: 0,
   );
 
-  static const MZN = Currency(
+  static const mzn = Currency(
     code: 'MZN',
     name: 'Mozambican Metical',
     namePlural: 'Mozambican meticals',
@@ -774,7 +774,7 @@ abstract class Currency with _$Currency {
     rounding: 0,
   );
 
-  static const NAD = Currency(
+  static const nad = Currency(
     code: 'NAD',
     name: 'Namibian Dollar',
     namePlural: 'Namibian dollars',
@@ -784,7 +784,7 @@ abstract class Currency with _$Currency {
     rounding: 0,
   );
 
-  static const NGN = Currency(
+  static const ngn = Currency(
     code: 'NGN',
     name: 'Nigerian Naira',
     namePlural: 'Nigerian nairas',
@@ -794,7 +794,7 @@ abstract class Currency with _$Currency {
     rounding: 0,
   );
 
-  static const NIO = Currency(
+  static const nio = Currency(
     code: 'NIO',
     name: 'Nicaraguan Córdoba',
     namePlural: 'Nicaraguan córdobas',
@@ -804,7 +804,7 @@ abstract class Currency with _$Currency {
     rounding: 0,
   );
 
-  static const NOK = Currency(
+  static const nok = Currency(
     code: 'NOK',
     name: 'Norwegian Krone',
     namePlural: 'Norwegian kroner',
@@ -814,7 +814,7 @@ abstract class Currency with _$Currency {
     rounding: 0,
   );
 
-  static const NPR = Currency(
+  static const npr = Currency(
     code: 'NPR',
     name: 'Nepalese Rupee',
     namePlural: 'Nepalese rupees',
@@ -824,7 +824,7 @@ abstract class Currency with _$Currency {
     rounding: 0,
   );
 
-  static const NZD = Currency(
+  static const nzd = Currency(
     code: 'NZD',
     name: 'New Zealand Dollar',
     namePlural: 'New Zealand dollars',
@@ -834,7 +834,7 @@ abstract class Currency with _$Currency {
     rounding: 0,
   );
 
-  static const OMR = Currency(
+  static const omr = Currency(
     code: 'OMR',
     name: 'Omani Rial',
     namePlural: 'Omani rials',
@@ -844,7 +844,7 @@ abstract class Currency with _$Currency {
     rounding: 0,
   );
 
-  static const PAB = Currency(
+  static const pab = Currency(
     code: 'PAB',
     name: 'Panamanian Balboa',
     namePlural: 'Panamanian balboas',
@@ -854,7 +854,7 @@ abstract class Currency with _$Currency {
     rounding: 0,
   );
 
-  static const PEN = Currency(
+  static const pen = Currency(
     code: 'PEN',
     name: 'Peruvian Nuevo Sol',
     namePlural: 'Peruvian nuevos soles',
@@ -864,7 +864,7 @@ abstract class Currency with _$Currency {
     rounding: 0,
   );
 
-  static const PHP = Currency(
+  static const php = Currency(
     code: 'PHP',
     name: 'Philippine Peso',
     namePlural: 'Philippine pesos',
@@ -874,7 +874,7 @@ abstract class Currency with _$Currency {
     rounding: 0,
   );
 
-  static const PKR = Currency(
+  static const pkr = Currency(
     code: 'PKR',
     name: 'Pakistani Rupee',
     namePlural: 'Pakistani rupees',
@@ -884,7 +884,7 @@ abstract class Currency with _$Currency {
     rounding: 0,
   );
 
-  static const PLN = Currency(
+  static const pln = Currency(
     code: 'PLN',
     name: 'Polish Zloty',
     namePlural: 'Polish zlotys',
@@ -894,7 +894,7 @@ abstract class Currency with _$Currency {
     rounding: 0,
   );
 
-  static const PYG = Currency(
+  static const pyg = Currency(
     code: 'PYG',
     name: 'Paraguayan Guarani',
     namePlural: 'Paraguayan guaranis',
@@ -904,7 +904,7 @@ abstract class Currency with _$Currency {
     rounding: 0,
   );
 
-  static const QAR = Currency(
+  static const qar = Currency(
     code: 'QAR',
     name: 'Qatari Rial',
     namePlural: 'Qatari rials',
@@ -914,7 +914,7 @@ abstract class Currency with _$Currency {
     rounding: 0,
   );
 
-  static const RON = Currency(
+  static const ron = Currency(
     code: 'RON',
     name: 'Romanian Leu',
     namePlural: 'Romanian lei',
@@ -924,7 +924,7 @@ abstract class Currency with _$Currency {
     rounding: 0,
   );
 
-  static const RSD = Currency(
+  static const rsd = Currency(
     code: 'RSD',
     name: 'Serbian Dinar',
     namePlural: 'Serbian dinars',
@@ -934,7 +934,7 @@ abstract class Currency with _$Currency {
     rounding: 0,
   );
 
-  static const RUB = Currency(
+  static const rub = Currency(
     code: 'RUB',
     name: 'Russian Ruble',
     namePlural: 'Russian rubles',
@@ -944,7 +944,7 @@ abstract class Currency with _$Currency {
     rounding: 0,
   );
 
-  static const RWF = Currency(
+  static const rwf = Currency(
     code: 'RWF',
     name: 'Rwandan Franc',
     namePlural: 'Rwandan francs',
@@ -954,7 +954,7 @@ abstract class Currency with _$Currency {
     rounding: 0,
   );
 
-  static const SAR = Currency(
+  static const sar = Currency(
     code: 'SAR',
     name: 'Saudi Riyal',
     namePlural: 'Saudi riyals',
@@ -964,7 +964,7 @@ abstract class Currency with _$Currency {
     rounding: 0,
   );
 
-  static const SDG = Currency(
+  static const sdg = Currency(
     code: 'SDG',
     name: 'Sudanese Pound',
     namePlural: 'Sudanese pounds',
@@ -974,7 +974,7 @@ abstract class Currency with _$Currency {
     rounding: 0,
   );
 
-  static const SEK = Currency(
+  static const sek = Currency(
     code: 'SEK',
     name: 'Swedish Krona',
     namePlural: 'Swedish kronor',
@@ -984,7 +984,7 @@ abstract class Currency with _$Currency {
     rounding: 0,
   );
 
-  static const SGD = Currency(
+  static const sgd = Currency(
     code: 'SGD',
     name: 'Singapore Dollar',
     namePlural: 'Singapore dollars',
@@ -994,7 +994,7 @@ abstract class Currency with _$Currency {
     rounding: 0,
   );
 
-  static const SOS = Currency(
+  static const sos = Currency(
     code: 'SOS',
     name: 'Somali Shilling',
     namePlural: 'Somali shillings',
@@ -1004,7 +1004,7 @@ abstract class Currency with _$Currency {
     rounding: 0,
   );
 
-  static const SYP = Currency(
+  static const syp = Currency(
     code: 'SYP',
     name: 'Syrian Pound',
     namePlural: 'Syrian pounds',
@@ -1014,7 +1014,7 @@ abstract class Currency with _$Currency {
     rounding: 0,
   );
 
-  static const THB = Currency(
+  static const thb = Currency(
     code: 'THB',
     name: 'Thai Baht',
     namePlural: 'Thai baht',
@@ -1024,7 +1024,7 @@ abstract class Currency with _$Currency {
     rounding: 0,
   );
 
-  static const TND = Currency(
+  static const tnd = Currency(
     code: 'TND',
     name: 'Tunisian Dinar',
     namePlural: 'Tunisian dinars',
@@ -1034,7 +1034,7 @@ abstract class Currency with _$Currency {
     rounding: 0,
   );
 
-  static const TOP = Currency(
+  static const top = Currency(
     code: 'TOP',
     name: 'Tongan Paʻanga',
     namePlural: 'Tongan paʻanga',
@@ -1044,7 +1044,7 @@ abstract class Currency with _$Currency {
     rounding: 0,
   );
 
-  static const TRY = Currency(
+  static const try = Currency(
     code: 'TRY',
     name: 'Turkish Lira',
     namePlural: 'Turkish Lira',
@@ -1054,7 +1054,7 @@ abstract class Currency with _$Currency {
     rounding: 0,
   );
 
-  static const TTD = Currency(
+  static const ttd = Currency(
     code: 'TTD',
     name: 'Trinidad and Tobago Dollar',
     namePlural: 'Trinidad and Tobago dollars',
@@ -1064,7 +1064,7 @@ abstract class Currency with _$Currency {
     rounding: 0,
   );
 
-  static const TWD = Currency(
+  static const twd = Currency(
     code: 'TWD',
     name: 'New Taiwan Dollar',
     namePlural: 'New Taiwan dollars',
@@ -1074,7 +1074,7 @@ abstract class Currency with _$Currency {
     rounding: 0,
   );
 
-  static const TZS = Currency(
+  static const tzs = Currency(
     code: 'TZS',
     name: 'Tanzanian Shilling',
     namePlural: 'Tanzanian shillings',
@@ -1084,7 +1084,7 @@ abstract class Currency with _$Currency {
     rounding: 0,
   );
 
-  static const UAH = Currency(
+  static const uah = Currency(
     code: 'UAH',
     name: 'Ukrainian Hryvnia',
     namePlural: 'Ukrainian hryvnias',
@@ -1094,7 +1094,7 @@ abstract class Currency with _$Currency {
     rounding: 0,
   );
 
-  static const UGX = Currency(
+  static const ugx = Currency(
     code: 'UGX',
     name: 'Ugandan Shilling',
     namePlural: 'Ugandan shillings',
@@ -1104,7 +1104,7 @@ abstract class Currency with _$Currency {
     rounding: 0,
   );
 
-  static const UYU = Currency(
+  static const uyu = Currency(
     code: 'UYU',
     name: 'Uruguayan Peso',
     namePlural: 'Uruguayan pesos',
@@ -1114,7 +1114,7 @@ abstract class Currency with _$Currency {
     rounding: 0,
   );
 
-  static const UZS = Currency(
+  static const uzs = Currency(
     code: 'UZS',
     name: 'Uzbekistan Som',
     namePlural: 'Uzbekistan som',
@@ -1124,7 +1124,7 @@ abstract class Currency with _$Currency {
     rounding: 0,
   );
 
-  static const VEF = Currency(
+  static const vef = Currency(
     code: 'VEF',
     name: 'Venezuelan Bolívar',
     namePlural: 'Venezuelan bolívars',
@@ -1134,7 +1134,7 @@ abstract class Currency with _$Currency {
     rounding: 0,
   );
 
-  static const VND = Currency(
+  static const vnd = Currency(
     code: 'VND',
     name: 'Vietnamese Dong',
     namePlural: 'Vietnamese dong',
@@ -1144,7 +1144,7 @@ abstract class Currency with _$Currency {
     rounding: 0,
   );
 
-  static const XAF = Currency(
+  static const xaf = Currency(
     code: 'XAF',
     name: 'CFA Franc BEAC',
     namePlural: 'CFA francs BEAC',
@@ -1154,7 +1154,7 @@ abstract class Currency with _$Currency {
     rounding: 0,
   );
 
-  static const XOF = Currency(
+  static const xof = Currency(
     code: 'XOF',
     name: 'CFA Franc BCEAO',
     namePlural: 'CFA francs BCEAO',
@@ -1164,7 +1164,7 @@ abstract class Currency with _$Currency {
     rounding: 0,
   );
 
-  static const YER = Currency(
+  static const yer = Currency(
     code: 'YER',
     name: 'Yemeni Rial',
     namePlural: 'Yemeni rials',
@@ -1174,7 +1174,7 @@ abstract class Currency with _$Currency {
     rounding: 0,
   );
 
-  static const ZAR = Currency(
+  static const zar = Currency(
     code: 'ZAR',
     name: 'South African Rand',
     namePlural: 'South African rand',
@@ -1184,7 +1184,7 @@ abstract class Currency with _$Currency {
     rounding: 0,
   );
 
-  static const ZMK = Currency(
+  static const zmk = Currency(
     code: 'ZMK',
     name: 'Zambian Kwacha',
     namePlural: 'Zambian kwachas',
@@ -1194,7 +1194,7 @@ abstract class Currency with _$Currency {
     rounding: 0,
   );
 
-  static const ZWL = Currency(
+  static const zwl = Currency(
     code: 'ZWL',
     name: 'Zimbabwean Dollar',
     namePlural: 'Zimbabwean Dollar',

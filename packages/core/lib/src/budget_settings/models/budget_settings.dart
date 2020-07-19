@@ -20,7 +20,7 @@ abstract class BudgetSettings with _$BudgetSettings {
       decimalDigitsAmount: 2,
       decimalSeparator: Separator.period,
       groupSeparator: Separator.comma,
-      currency: Currency.USD,
+      currency: Currency.usd,
       currencyPlacement: Some(CurrencyPlacement.beforeAmount),
     ),
   );

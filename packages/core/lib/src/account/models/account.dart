@@ -48,3 +48,8 @@ abstract class AccountKind implements _$AccountKind {
 }
 
 enum AccountGroup { onBudget, tracking }
+
+@freezed
+abstract class AccountId with _$AccountId {
+  const factory AccountId(String raw) = _AccountId;
+}

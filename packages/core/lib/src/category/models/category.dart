@@ -44,15 +44,15 @@ abstract class Goal with _$Goal {
 @freezed
 abstract class GoalKind with _$GoalKind {
   const factory GoalKind.targetCategoryBalance({
-    @required int targetBalance,
+    @required Milliunit targetBalance,
   }) = TargetCategoryBalance;
 
   const factory GoalKind.targetCategoryByDate(
     DateTime date, {
-    @required int targetBalance,
+    @required Milliunit targetBalance,
   }) = TargetCategoryByDate;
 
   const factory GoalKind.monthlyFunding({
-    @required int fundingBalance,
+    @required Milliunit fundingBalance,
   }) = MonthlyFunding;
 }

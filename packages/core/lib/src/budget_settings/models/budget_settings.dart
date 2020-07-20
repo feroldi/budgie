@@ -16,7 +16,6 @@ abstract class BudgetSettings with _$BudgetSettings {
   static const defaultValue = BudgetSettings(
     dateFormat: DateFormat(DateOrder.yearMonthDay, DateSeparator.hyphen),
     currencyFormat: CurrencyFormat(
-      isoCode: CurrencyISOCode.usd,
       decimalDigitsAmount: 2,
       decimalSeparator: Separator.period,
       groupSeparator: Separator.comma,
@@ -43,7 +42,6 @@ enum DateSeparator { hyphen, period, slash }
 @freezed
 abstract class CurrencyFormat with _$CurrencyFormat {
   const factory CurrencyFormat({
-    @required CurrencyISOCode isoCode,
     @required int decimalDigitsAmount,
     @required Separator decimalSeparator,
     @required Separator groupSeparator,
@@ -51,9 +49,6 @@ abstract class CurrencyFormat with _$CurrencyFormat {
     @required Option<CurrencyPlacement> currencyPlacement,
   }) = _CurrencyFormat;
 }
-
-/// The supported currency ISO codes.
-enum CurrencyISOCode { eur, brl, usd }
 
 /// The currency separators for decimals and groups.
 enum Separator { comma, period }

@@ -2,6 +2,7 @@ import 'package:freezed_annotation/freezed_annotation.dart';
 
 part 'currency.freezed.dart';
 
+// TODO(feroldi): `code` should be an IsoCode enum.
 @freezed
 abstract class Currency with _$Currency {
   const factory Currency._({

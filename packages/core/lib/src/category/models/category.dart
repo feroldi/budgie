@@ -30,7 +30,7 @@ abstract class CategoryGroup with _$CategoryGroup {
 
 @freezed
 abstract class CategoryGroupId with _$CategoryGroupId {
-  const factory CategoryGroupId(String _raw) = _CategoryGroupId;
+  const factory CategoryGroupId(String raw) = _CategoryGroupId;
 }
 
 @freezed

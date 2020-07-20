@@ -17,8 +17,11 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - name: Install dependencies
+      working-directory: packages/core
       run: pub get
     - name: Run build runner
+      working-directory: packages/core
       run: pub run build_runner build
     - name: Run tests
+      working-directory: packages/core
       run: pub run test

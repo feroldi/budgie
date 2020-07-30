@@ -20,6 +20,11 @@ abstract class Category with _$Category {
 }
 
 @freezed
+abstract class CategoryId with _$CategoryId {
+  const factory CategoryId(String raw) = _CategoryId;
+}
+
+@freezed
 abstract class CategoryGroup with _$CategoryGroup {
   const factory CategoryGroup({
     @required String name,

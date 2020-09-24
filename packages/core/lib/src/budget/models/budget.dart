@@ -1,11 +1,11 @@
 import 'package:freezed_annotation/freezed_annotation.dart';
 
-import '../../account/models/account.dart';
-import '../../budget_settings/models/budget_settings.dart';
-import '../../category/models/category.dart';
-import '../../month/models/month.dart';
-import '../../payee/models/payee.dart';
-import '../../transaction/models/transaction.dart';
+import 'account.dart';
+import 'budget_settings.dart';
+import 'category.dart';
+import 'month.dart';
+import 'payee.dart';
+import 'transaction.dart';
 
 part 'budget.freezed.dart';
 

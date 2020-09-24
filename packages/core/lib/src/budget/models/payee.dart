@@ -1,7 +1,7 @@
 import 'package:freezed_annotation/freezed_annotation.dart';
 import 'package:dartz/dartz.dart';
 
-import '../../account/models/account.dart';
+import 'account.dart';
 
 part 'payee.freezed.dart';
 

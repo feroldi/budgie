@@ -1,10 +1,10 @@
 import 'package:dartz/dartz.dart';
 import 'package:freezed_annotation/freezed_annotation.dart';
 
-import '../../account/models/account.dart';
-import '../../category/models/category.dart';
-import '../../payee/models/payee.dart';
+import 'account.dart';
+import 'category.dart';
 import 'milliunit.dart';
+import 'payee.dart';
 
 part 'transaction.freezed.dart';
 

@@ -1,7 +1,7 @@
 import 'package:freezed_annotation/freezed_annotation.dart';
 import 'package:dartz/dartz.dart';
 
-import '../../transaction/models/milliunit.dart';
+import 'milliunit.dart';
 
 part 'category.freezed.dart';
 

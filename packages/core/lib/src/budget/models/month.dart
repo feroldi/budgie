@@ -1,6 +1,6 @@
 import 'package:freezed_annotation/freezed_annotation.dart';
 
-import '../../transaction/models/milliunit.dart';
+import 'milliunit.dart';
 
 part 'month.freezed.dart';
 

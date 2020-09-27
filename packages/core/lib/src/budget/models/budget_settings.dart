@@ -1,3 +1,4 @@
+import 'package:built_collection/built_collection.dart';
 import 'package:built_value/built_value.dart';
 import 'package:built_value/serializer.dart';
 
@@ -22,10 +23,10 @@ abstract class BudgetSettings
         ..separator = DateSeparator.hyphen)
       ..currencyFormat.update((b) => b
         ..decimalDigitsAmount = 2
-        ..decimalSeparator = Separator.period
-        ..groupSeparator = Separator.comma
-        ..currency = Currency.usd
-        ..currencyPlacement = CurrencyPlacement.beforeAmount),
+        ..decimalSeparator = CurrencySeparator.period
+        ..groupSeparator = CurrencySeparator.comma
+        ..currency.replace(Currency.usd)
+        ..currencyPlacement = CurrencySymbolPlacement.beforeAmount),
   );
 
   DateFormat get dateFormat;
@@ -45,9 +46,33 @@ abstract class DateFormat implements Built<DateFormat, DateFormatBuilder> {
   DateSeparator get separator;
 }
 
-enum DateOrder { yearMonthDay, dayMonthYear, monthDayYear }
+class DateOrder extends EnumClass {
+  const DateOrder._(String name) : super(name);
 
-enum DateSeparator { hyphen, period, slash }
+  static Serializer<DateOrder> get serializer => _$dateOrderSerializer;
+
+  static const DateOrder yearMonthDay = _$yearMonthDay;
+  static const DateOrder dayMonthYear = _$dayMonthYear;
+  static const DateOrder monthDayYear = _$monthDayYear;
+
+  static BuiltSet<DateOrder> get values => _$dateOrderValues;
+
+  static DateOrder valueOf(String name) => _$dateOrderValueOf(name);
+}
+
+class DateSeparator extends EnumClass {
+  const DateSeparator._(String name) : super(name);
+
+  static Serializer<DateSeparator> get serializer => _$dateSeparatorSerializer;
+
+  static const DateSeparator hyphen = _$hyphen;
+  static const DateSeparator period = _$period;
+  static const DateSeparator slash = _$slash;
+
+  static BuiltSet<DateSeparator> get values => _$dateSeparatorValues;
+
+  static DateSeparator valueOf(String name) => _$dateSeparatorValueOf(name);
+}
 
 /// The currency format setting for the budget.
 abstract class CurrencyFormat
@@ -61,18 +86,45 @@ abstract class CurrencyFormat
 
   int get decimalDigitsAmount;
 
-  Separator get decimalSeparator;
+  CurrencySeparator get decimalSeparator;
 
-  Separator get groupSeparator;
+  CurrencySeparator get groupSeparator;
 
   Currency get currency;
 
   @nullable
-  CurrencyPlacement get currencyPlacement;
+  CurrencySymbolPlacement get currencyPlacement;
 }
 
 /// The currency separators for decimals and groups.
-enum Separator { comma, period }
+class CurrencySeparator extends EnumClass {
+  const CurrencySeparator._(String name) : super(name);
+
+  static Serializer<CurrencySeparator> get serializer =>
+      _$currencySeparatorSerializer;
+
+  static const CurrencySeparator comma = _$commaSeparator;
+  static const CurrencySeparator period = _$periodSeparator;
+
+  static BuiltSet<CurrencySeparator> get values => _$currencySeparatorValues;
+
+  static CurrencySeparator valueOf(String name) =>
+      _$currencySeparatorValueOf(name);
+}
 
 /// Placement of the currency symbol.
-enum CurrencyPlacement { beforeAmount, afterAmount }
+class CurrencySymbolPlacement extends EnumClass {
+  const CurrencySymbolPlacement._(String name) : super(name);
+
+  static Serializer<CurrencySymbolPlacement> get serializer =>
+      _$currencySymbolPlacementSerializer;
+
+  static const CurrencySymbolPlacement beforeAmount = _$beforeAmount;
+  static const CurrencySymbolPlacement afterAmount = _$afterAmount;
+
+  static BuiltSet<CurrencySymbolPlacement> get values =>
+      _$currencySymbolPlacementValues;
+
+  static CurrencySymbolPlacement valueOf(String name) =>
+      _$currencySymbolPlacementValueOf(name);
+}

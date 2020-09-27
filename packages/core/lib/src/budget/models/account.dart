@@ -87,4 +87,15 @@ class AccountKind extends EnumClass {
   static AccountKind valueOf(String name) => _$valueOf(name);
 }
 
-enum AccountGroup { onBudget, tracking }
+class AccountGroup extends EnumClass {
+  const AccountGroup._(String name) : super(name);
+
+  static Serializer<AccountGroup> get serializer => _$accountGroupSerializer;
+
+  static const AccountGroup onBudget = _$onBudget;
+  static const AccountGroup tracking = _$tracking;
+
+  static BuiltSet<AccountGroup> get values => _$accountGroupValues;
+
+  static AccountGroup valueOf(String name) => _$accountGroupValueOf(name);
+}

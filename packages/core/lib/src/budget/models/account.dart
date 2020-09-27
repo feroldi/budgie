@@ -1,55 +1,90 @@
-import 'package:freezed_annotation/freezed_annotation.dart';
+import 'package:built_collection/built_collection.dart';
+import 'package:built_value/built_value.dart';
+import 'package:built_value/serializer.dart';
 
-part 'account.freezed.dart';
+import 'milliunit.dart';
+
+part 'account.g.dart';
 
 /// An account holds a currency balance that may be used on a budget.
-@freezed
-abstract class Account with _$Account {
-  /// [name]: A descriptive name for this account.
-  /// [kind]: The type of account, e.g. whether it's a checking, asset or
+abstract class Account implements Built<Account, AccountBuilder> {
+  factory Account([void Function(AccountBuilder) updates]) = _$Account;
+  Account._();
+
+  static Serializer<Account> get serializer => _$accountSerializer;
+
+  /// A descriptive name for this account.
+  String get name;
+
+  /// A description for this account.
+  String get note;
+
+  /// The current balance of the account in milliunits format.
+  Milliunit get balance;
+
+  /// The current cleared balance of the account in milliunits format.
+  Milliunit get clearedBalance;
+
+  /// The current uncleared balance of the account in milliunits format.
+  Milliunit get unclearedBalance;
+
+  /// Whether this account is closed or not.
+  bool get isClosed;
+
+  /// Whether or not this account has been deleted.
+  bool get isDeleted;
+
+  /// The type of account, e.g. whether it's a checking, asset or
   /// liability kind of account.
-  /// [isClosed]: Whether this account is closed or not.
-  /// [note]: A description for this account.
-  /// [balance]: The current balance of the account in milliunits format.
-  /// [clearedBalance]: The current cleared balance of the account in milliunits
-  /// format.
-  /// [unclearedBalance]: The current uncleared balance of the account in
-  /// milliunits format.
-  /// [isDeleted]: Whether or not this account has been deleted.
-  const factory Account({
-    @required String name,
-    @required AccountKind kind,
-    @required bool isClosed,
-    @required String note,
-    @required int balance,
-    @required int clearedBalance,
-    @required int unclearedBalance,
-    @required bool isDeleted,
-  }) = _Account;
+  AccountKind get kind;
 }
 
-@freezed
-abstract class AccountKind implements _$AccountKind {
-  const factory AccountKind.__(AccountGroup group) = _AccountKind;
+abstract class AccountId implements Built<AccountId, AccountIdBuilder> {
+  factory AccountId([void Function(AccountIdBuilder) updates]) = _$AccountId;
+  AccountId._();
 
-  // ignore: unused_element
-  const AccountKind._();
+  static Serializer<AccountId> get serializer => _$accountIdSerializer;
 
-  static const checking = AccountKind.__(AccountGroup.onBudget);
-  static const savings = AccountKind.__(AccountGroup.onBudget);
-  static const cash = AccountKind.__(AccountGroup.onBudget);
-  static const creditCard = AccountKind.__(AccountGroup.onBudget);
-  static const lineOfCredit = AccountKind.__(AccountGroup.onBudget);
-  static const otherAsset = AccountKind.__(AccountGroup.tracking);
-  static const otherLiability = AccountKind.__(AccountGroup.tracking);
+  /// The raw data of this id.
+  String get raw;
+}
+
+class AccountKind extends EnumClass {
+  const AccountKind._(String name) : super(name);
+
+  static Serializer<AccountKind> get serializer => _$accountKindSerializer;
+
+  static const AccountKind checking = _$checking;
+  static const AccountKind savings = _$savings;
+  static const AccountKind cash = _$cash;
+  static const AccountKind creditCard = _$creditCard;
+  static const AccountKind lineOfCredit = _$lineOfCredit;
+  static const AccountKind otherAsset = _$otherAsset;
+  static const AccountKind otherLiability = _$otherLiability;
+
+  AccountGroup get group {
+    switch (this) {
+      case checking:
+      case savings:
+      case cash:
+      case creditCard:
+      case lineOfCredit:
+        return AccountGroup.onBudget;
+      case otherAsset:
+      case otherLiability:
+        return AccountGroup.tracking;
+      default:
+        throw AssertionError(this);
+    }
+  }
 
   bool get isOnBudget => group == AccountGroup.onBudget;
+
   bool get isTracking => group == AccountGroup.tracking;
+
+  static BuiltSet<AccountKind> get values => _$values;
+
+  static AccountKind valueOf(String name) => _$valueOf(name);
 }
 
 enum AccountGroup { onBudget, tracking }
-
-@freezed
-abstract class AccountId with _$AccountId {
-  const factory AccountId(String raw) = _AccountId;
-}

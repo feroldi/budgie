@@ -1,20 +1,29 @@
-import 'package:freezed_annotation/freezed_annotation.dart';
-import 'package:dartz/dartz.dart';
+import 'package:built_value/built_value.dart';
+import 'package:built_value/serializer.dart';
 
 import 'account.dart';
 
-part 'payee.freezed.dart';
+part 'payee.g.dart';
 
-@freezed
-abstract class Payee with _$Payee {
-  const factory Payee({
-    @required String name,
-    @required bool isDeleted,
-    @required Option<AccountId> transferAccount,
-  }) = _Payee;
+abstract class Payee implements Built<Payee, PayeeBuilder> {
+  factory Payee([void Function(PayeeBuilder) updates]) = _$Payee;
+  Payee._();
+
+  static Serializer<Payee> get serializer => _$payeeSerializer;
+
+  String get name;
+
+  bool get isDeleted;
+
+  @nullable
+  AccountId get transferAccount;
 }
 
-@freezed
-abstract class PayeeId with _$PayeeId {
-  const factory PayeeId(String raw) = _PayeeId;
+abstract class PayeeId implements Built<PayeeId, PayeeIdBuilder> {
+  factory PayeeId([void Function(PayeeIdBuilder) updates]) = _$PayeeId;
+  PayeeId._();
+
+  static Serializer<PayeeId> get serializer => _$payeeIdSerializer;
+
+  String get raw;
 }

@@ -1,4 +1,6 @@
-import 'package:freezed_annotation/freezed_annotation.dart';
+import 'package:built_collection/built_collection.dart';
+import 'package:built_value/built_value.dart';
+import 'package:built_value/serializer.dart';
 
 import 'account.dart';
 import 'budget_settings.dart';
@@ -7,18 +9,27 @@ import 'month.dart';
 import 'payee.dart';
 import 'transaction.dart';
 
-part 'budget.freezed.dart';
+part 'budget.g.dart';
 
-@freezed
-abstract class Budget with _$Budget {
-  const factory Budget({
-    @required String name,
-    @required BudgetSettings settings,
-    @required List<Account> accounts,
-    @required List<Payee> payees,
-    @required List<CategoryGroup> categoryGroups,
-    @required List<Category> categories,
-    @required List<Month> months,
-    @required List<Transaction> transactions,
-  }) = _Budget;
+abstract class Budget implements Built<Budget, BudgetBuilder> {
+  factory Budget([void Function(BudgetBuilder) updates]) = _$Budget;
+  Budget._();
+
+  static Serializer<Budget> get serializer => _$budgetSerializer;
+
+  String get name;
+
+  BudgetSettings get settings;
+
+  BuiltList<Account> get accounts;
+
+  BuiltList<Payee> get payees;
+
+  BuiltList<CategoryGroup> get categoryGroups;
+
+  BuiltList<Category> get categories;
+
+  BuiltList<Month> get months;
+
+  BuiltList<Transaction> get transactions;
 }

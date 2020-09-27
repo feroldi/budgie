@@ -1,63 +1,97 @@
-import 'package:freezed_annotation/freezed_annotation.dart';
-import 'package:dartz/dartz.dart';
+import 'package:built_collection/built_collection.dart';
+import 'package:built_value/built_value.dart';
+import 'package:built_value/serializer.dart';
 
 import 'milliunit.dart';
 
-part 'category.freezed.dart';
+part 'category.g.dart';
 
-@freezed
-abstract class Category with _$Category {
-  const factory Category({
-    @required CategoryGroupId categoryGroupId,
-    @required String name,
-    @required bool isHidden,
-    @required String note,
-    @required Milliunit budgetedAmount,
-    @required Milliunit activity,
-    @required Milliunit balance,
-    @required Option<Goal> goal,
-  }) = _Category;
+abstract class Category implements Built<Category, CategoryBuilder> {
+  factory Category([void Function(CategoryBuilder) updates]) = _$Category;
+  Category._();
+
+  static Serializer<Category> get serializer => _$categorySerializer;
+
+  CategoryGroupId get categoryGroupId;
+
+  String get name;
+
+  bool get isHidden;
+
+  String get note;
+
+  Milliunit get budgetedAmount;
+
+  Milliunit get activity;
+
+  Milliunit get balance;
+
+  @nullable
+  Goal get goal;
 }
 
-@freezed
-abstract class CategoryId with _$CategoryId {
-  const factory CategoryId(String raw) = _CategoryId;
+abstract class CategoryId implements Built<CategoryId, CategoryIdBuilder> {
+  factory CategoryId([void Function(CategoryIdBuilder) updates]) = _$CategoryId;
+  CategoryId._();
+
+  static Serializer<CategoryId> get serializer => _$categoryIdSerializer;
+
+  String get raw;
 }
 
-@freezed
-abstract class CategoryGroup with _$CategoryGroup {
-  const factory CategoryGroup({
-    @required String name,
-    @required bool isHidden,
-    @required bool isDeleted,
-  }) = _CategoryGroup;
+abstract class CategoryGroup
+    implements Built<CategoryGroup, CategoryGroupBuilder> {
+  factory CategoryGroup([void Function(CategoryGroupBuilder) updates]) =
+      _$CategoryGroup;
+  CategoryGroup._();
+
+  static Serializer<CategoryGroup> get serializer => _$categoryGroupSerializer;
+
+  String get name;
+
+  bool get isHidden;
+
+  bool get isDeleted;
 }
 
-@freezed
-abstract class CategoryGroupId with _$CategoryGroupId {
-  const factory CategoryGroupId(String raw) = _CategoryGroupId;
+abstract class CategoryGroupId
+    implements Built<CategoryGroupId, CategoryGroupIdBuilder> {
+  factory CategoryGroupId([void Function(CategoryGroupIdBuilder) updates]) =
+      _$CategoryGroupId;
+  CategoryGroupId._();
+
+  static Serializer<CategoryGroupId> get serializer =>
+      _$categoryGroupIdSerializer;
+
+  String get raw;
 }
 
-@freezed
-abstract class Goal with _$Goal {
-  const factory Goal({
-    @required GoalKind kind,
-    @required DateTime creationMonth,
-  }) = _Goal;
+abstract class Goal implements Built<Goal, GoalBuilder> {
+  factory Goal([void Function(GoalBuilder) updates]) = _$Goal;
+  Goal._();
+
+  static Serializer<Goal> get serializer => _$goalSerializer;
+
+  GoalKind get kind;
+
+  Milliunit get targetBalance;
+
+  DateTime get creationMonth;
+
+  @nullable
+  DateTime get dueDate;
 }
 
-@freezed
-abstract class GoalKind with _$GoalKind {
-  const factory GoalKind.targetCategoryBalance({
-    @required Milliunit targetBalance,
-  }) = TargetCategoryBalance;
+class GoalKind extends EnumClass {
+  const GoalKind._(String name) : super(name);
 
-  const factory GoalKind.targetCategoryByDate(
-    DateTime date, {
-    @required Milliunit targetBalance,
-  }) = TargetCategoryByDate;
+  static Serializer<GoalKind> get serializer => _$goalKindSerializer;
 
-  const factory GoalKind.monthlyFunding({
-    @required Milliunit fundingBalance,
-  }) = MonthlyFunding;
+  static const GoalKind targetCategoryBalance = _$targetCategoryBalance;
+  static const GoalKind targetCategoryByDate = _$targetCategoryByDate;
+  static const GoalKind fundingBalance = _$fundingBalance;
+
+  static BuiltSet<GoalKind> get values => _$values;
+
+  static GoalKind valueOf(String name) => _$valueOf(name);
 }

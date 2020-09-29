@@ -22,6 +22,7 @@ abstract class Transaction implements Built<Transaction, TransactionBuilder> {
 
   AccountId get accountId;
 
+  @nullable
   PayeeId get payeeId;
 
   CategoryId get categoryId;

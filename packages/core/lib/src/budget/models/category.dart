@@ -6,39 +6,6 @@ import 'milliunit.dart';
 
 part 'category.g.dart';
 
-abstract class Category implements Built<Category, CategoryBuilder> {
-  factory Category([void Function(CategoryBuilder) updates]) = _$Category;
-  Category._();
-
-  static Serializer<Category> get serializer => _$categorySerializer;
-
-  CategoryGroupId get categoryGroupId;
-
-  String get name;
-
-  bool get isHidden;
-
-  String get note;
-
-  Milliunit get budgetedAmount;
-
-  Milliunit get activity;
-
-  Milliunit get balance;
-
-  @nullable
-  Goal get goal;
-}
-
-abstract class CategoryId implements Built<CategoryId, CategoryIdBuilder> {
-  factory CategoryId([void Function(CategoryIdBuilder) updates]) = _$CategoryId;
-  CategoryId._();
-
-  static Serializer<CategoryId> get serializer => _$categoryIdSerializer;
-
-  String get raw;
-}
-
 abstract class CategoryGroup
     implements Built<CategoryGroup, CategoryGroupBuilder> {
   factory CategoryGroup([void Function(CategoryGroupBuilder) updates]) =
@@ -66,6 +33,44 @@ abstract class CategoryGroupId
   String get raw;
 }
 
+abstract class Category implements Built<Category, CategoryBuilder> {
+  factory Category([void Function(CategoryBuilder) updates]) = _$Category;
+  Category._();
+
+  static Serializer<Category> get serializer => _$categorySerializer;
+
+  CategoryGroupId get categoryGroupId;
+
+  String get name;
+
+  /// Whether or not the category is hidden
+  bool get isHidden;
+
+  /// If category is hidden this is the id of the category group it originally
+  /// belonged to before it was hidden.
+  CategoryGroupId get originalCategoryGroupId;
+
+  String get note;
+
+  Milliunit get budgetedAmount;
+
+  Milliunit get activity;
+
+  Milliunit get balance;
+
+  @nullable
+  Goal get goal;
+}
+
+abstract class CategoryId implements Built<CategoryId, CategoryIdBuilder> {
+  factory CategoryId([void Function(CategoryIdBuilder) updates]) = _$CategoryId;
+  CategoryId._();
+
+  static Serializer<CategoryId> get serializer => _$categoryIdSerializer;
+
+  String get raw;
+}
+
 abstract class Goal implements Built<Goal, GoalBuilder> {
   factory Goal([void Function(GoalBuilder) updates]) = _$Goal;
   Goal._();
@@ -74,12 +79,16 @@ abstract class Goal implements Built<Goal, GoalBuilder> {
 
   GoalKind get kind;
 
-  Milliunit get targetBalance;
-
   DateTime get creationMonth;
 
+  /// The target month for the goal to be completed.
+  /// Only some goal types specify this date.
+  Milliunit get targetBalance;
+
   @nullable
-  DateTime get dueDate;
+  DateTime get targetMonth;
+
+  int get percentageComplete;
 }
 
 class GoalKind extends EnumClass {
@@ -88,8 +97,10 @@ class GoalKind extends EnumClass {
   static Serializer<GoalKind> get serializer => _$goalKindSerializer;
 
   static const GoalKind targetCategoryBalance = _$targetCategoryBalance;
-  static const GoalKind targetCategoryByDate = _$targetCategoryByDate;
-  static const GoalKind fundingBalance = _$fundingBalance;
+  static const GoalKind targetCategoryBalanceByDate =
+      _$targetCategoryBalanceByDate;
+  static const GoalKind monthlyFunding = _$monthlyFunding;
+  static const GoalKind planYourSpending = _$planYourSpending;
 
   static BuiltSet<GoalKind> get values => _$values;
 

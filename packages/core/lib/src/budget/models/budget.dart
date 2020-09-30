@@ -17,6 +17,8 @@ abstract class Budget implements Built<Budget, BudgetBuilder> {
 
   static Serializer<Budget> get serializer => _$budgetSerializer;
 
+  BudgetId get id;
+
   String get name;
 
   BudgetSettings get settings;
@@ -32,4 +34,14 @@ abstract class Budget implements Built<Budget, BudgetBuilder> {
   BuiltList<Month> get months;
 
   BuiltList<Transaction> get transactions;
+}
+
+abstract class BudgetId implements Built<BudgetId, BudgetIdBuilder> {
+  factory BudgetId([void Function(BudgetIdBuilder) updates]) = _$BudgetId;
+  BudgetId._();
+
+  static Serializer<BudgetId> get serializer => _$budgetIdSerializer;
+
+  /// The raw data of this id.
+  String get raw;
 }

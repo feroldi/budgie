@@ -11,12 +11,15 @@ abstract class Payee implements Built<Payee, PayeeBuilder> {
 
   static Serializer<Payee> get serializer => _$payeeSerializer;
 
+  PayeeId get id;
+
   String get name;
 
   bool get isDeleted;
 
+  /// If a transfer payee, the [AccountId] to which this payee transfers to.
   @nullable
-  AccountId get transferAccount;
+  AccountId get transferAccountId;
 }
 
 abstract class PayeeId implements Built<PayeeId, PayeeIdBuilder> {

@@ -14,6 +14,8 @@ abstract class CategoryGroup
 
   static Serializer<CategoryGroup> get serializer => _$categoryGroupSerializer;
 
+  CategoryGroupId get id;
+
   String get name;
 
   bool get isHidden;
@@ -38,6 +40,8 @@ abstract class Category implements Built<Category, CategoryBuilder> {
   Category._();
 
   static Serializer<Category> get serializer => _$categorySerializer;
+
+  CategoryId get id;
 
   CategoryGroupId get categoryGroupId;
 

@@ -13,6 +13,8 @@ abstract class Account implements Built<Account, AccountBuilder> {
 
   static Serializer<Account> get serializer => _$accountSerializer;
 
+  AccountId get id;
+
   /// A descriptive name for this account.
   String get name;
 

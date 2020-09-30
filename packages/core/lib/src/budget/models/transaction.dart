@@ -22,6 +22,7 @@ abstract class Transaction implements Built<Transaction, TransactionBuilder> {
 
   Milliunit get amount;
 
+  @nullable
   String get memo;
 
   ClearedStatus get clearedStatus;

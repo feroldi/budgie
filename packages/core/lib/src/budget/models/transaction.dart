@@ -40,6 +40,7 @@ abstract class Transaction implements Built<Transaction, TransactionBuilder> {
   @nullable
   PayeeId get payeeId;
 
+  @nullable
   CategoryId get categoryId;
 
   /// If a transfer transaction, the account to which it transfers.

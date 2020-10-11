@@ -9,6 +9,7 @@ part 'account.g.dart';
 /// An account holds a currency balance that may be used on a budget.
 abstract class Account implements Built<Account, AccountBuilder> {
   factory Account([void Function(AccountBuilder) updates]) = _$Account;
+
   Account._();
 
   static Serializer<Account> get serializer => _$accountSerializer;
@@ -19,6 +20,7 @@ abstract class Account implements Built<Account, AccountBuilder> {
   String get name;
 
   /// A description for this account.
+  @nullable
   String get note;
 
   /// The current balance of the account in milliunits format.

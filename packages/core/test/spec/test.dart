@@ -18,6 +18,11 @@ Future<void> main() {
   ];
   final config = TestConfiguration.DEFAULT(steps)
     ..customStepParameterDefinitions = [AmountParameter()]
+    ..reporters = [
+      StdoutReporter(MessageLevel.error),
+      ProgressReporter(),
+      TestRunSummaryReporter(),
+    ]
     ..createWorld = (config) => Future.value(BudgetWorld());
   return GherkinRunner().execute(config);
 }

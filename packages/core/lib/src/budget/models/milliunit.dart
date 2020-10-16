@@ -4,7 +4,7 @@ import 'package:built_value/serializer.dart';
 part 'milliunit.g.dart';
 
 abstract class Milliunit implements Built<Milliunit, MilliunitBuilder> {
-  factory Milliunit([void Function(MilliunitBuilder) updates]) = _$Milliunit;
+  factory Milliunit({int amount}) = _$Milliunit._;
   Milliunit._();
 
   static Serializer<Milliunit> get serializer => _$milliunitSerializer;

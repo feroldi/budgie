@@ -10,4 +10,12 @@ abstract class Milliunit implements Built<Milliunit, MilliunitBuilder> {
   static Serializer<Milliunit> get serializer => _$milliunitSerializer;
 
   int get amount;
+
+  Milliunit operator +(Milliunit other) {
+    return Milliunit(amount: amount + other.amount);
+  }
+
+  Milliunit operator -(Milliunit other) {
+    return Milliunit(amount: amount - other.amount);
+  }
 }

@@ -5,6 +5,7 @@ import 'package:built_value/serializer.dart';
 import 'account.dart';
 import 'budget_settings.dart';
 import 'category.dart';
+import 'milliunit.dart';
 import 'month.dart';
 import 'payee.dart';
 import 'transaction.dart';
@@ -23,7 +24,7 @@ abstract class Budget implements Built<Budget, BudgetBuilder> {
 
   BudgetSettings get settings;
 
-  BuiltList<Account> get accounts;
+  BuiltMap<AccountId, Account> get accounts;
 
   BuiltList<Payee> get payees;
 

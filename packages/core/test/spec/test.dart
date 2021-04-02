@@ -1,7 +1,7 @@
 import 'package:gherkin/gherkin.dart';
 
 import 'parameters/amount_parameter.dart';
-import 'steps/given_my_account_has_in_balance.step.dart';
+import 'steps/given_my_account_has_amount_in_balance.step.dart';
 import 'steps/then_a_transaction_is_created_for_my_account.step.dart';
 import 'steps/then_my_account_has_in_balance.step.dart';
 import 'steps/when_i_transfer_from_account_to_another.step.dart';
@@ -10,7 +10,7 @@ import 'worlds/budget_world.world.dart';
 
 Future<void> main() {
   final steps = <StepDefinitionGeneric<BudgetWorld>>[
-    givenMyAccountHasInBalance(),
+    givenMyAccountHasAmountInBalance(),
     whenITransferToMyAccount(),
     whenITransferFromAccountToAnother(),
     thenATransactionIsCreatedForMyAccount(),

@@ -44,7 +44,7 @@ abstract class Account implements Built<Account, AccountBuilder> {
 }
 
 abstract class AccountId implements Built<AccountId, AccountIdBuilder> {
-  factory AccountId([void Function(AccountIdBuilder) updates]) = _$AccountId;
+  factory AccountId({String raw}) = _$AccountId._;
   AccountId._();
 
   static Serializer<AccountId> get serializer => _$accountIdSerializer;

@@ -5,7 +5,6 @@ import 'package:built_value/serializer.dart';
 import 'account.dart';
 import 'budget_settings.dart';
 import 'category.dart';
-import 'milliunit.dart';
 import 'month.dart';
 import 'payee.dart';
 import 'transaction.dart';
